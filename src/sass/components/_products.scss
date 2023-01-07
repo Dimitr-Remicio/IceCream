@@ -1,0 +1,31 @@
+.products{
+    display: flex;
+    
+}
+.products__title2,
+.products__title3,
+.products__title{    
+    @include font-titan-400();
+    justify-items: center;
+}
+.products__list{
+    display: flex;
+
+}
+.products__rectangle1,
+.products__rectangle2,
+.products__rectangle3{
+    display: flex;
+    box-shadow: $primary-shadow;
+    max-width: 20vh;
+
+}
+.products__rectangle1{
+    background-color: $background-color-1;
+}
+.products__rectangle2{
+    background-color: $background-color-2;
+}
+.products__rectangle3{
+    background-color: $background-color-3;
+}

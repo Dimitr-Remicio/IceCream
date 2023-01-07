@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import "./utils/variables";
+@import "./components/heroheader";
+@import "./components/products";
+@import "./components/about";
+@import "./components/advantages";
+@import "./components/gallery";
+@import "./components/customerreviews";
+@import "./components/contacts";
+@import "./components/footer";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+section {
+  padding: 20px 0;
+}
+.container {
+  padding: 0 10px;
+  max-width: calc(360px - 10px);
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  section {
+    padding: 20px 0;
+  }
+  .container {
+    padding: 0 50px;
+    max-width: calc(480px - 10px);
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 20px 0;
+  }
+  .container {
+    padding: 0 10px;
+    max-width: calc(768px - 10px);
+    margin: 0 5%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  section {
+    padding: 20px 0;
+  }
+  .container {
+    padding: 0 10px;
+    max-width: calc(1280px - 10px);
+    margin: 0 auto;
+  }
+}
