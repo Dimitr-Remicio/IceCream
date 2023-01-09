@@ -382,6 +382,8 @@ li {
     position: absolute;
     width: 28vw;
     height: 100px;
+  }
+}
 .testimonials {
   display: flex;
   justify-content: flex-start;
