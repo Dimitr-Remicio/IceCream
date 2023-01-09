@@ -3,23 +3,21 @@
   box-sizing: border-box;
   background: #FFF5F6;
   justify-content: center;
-  
+  flex-wrap: wrap;
+  gap: 44px;
+
+  padding: 50px 0 ;
+    flex-wrap: wrap;
+    
  
 }
 
 
-.container{
-  display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
-    align-items: flex-end;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin: 16px;
-  
+.containers{
+    gap: 50px;
+    display: flex;
+    justify-content: center
 }
-
 
 
 
@@ -147,9 +145,8 @@ padding-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 35%;
-  
-  
+  padding-top: 20px;  
+ 
 }
 
 .contacts__BotonLocalication,
@@ -170,6 +167,8 @@ padding-bottom: 20px;
   padding: 12px;
   margin: 12px;
   border: #FFF5F6;
+  cursor: pointer;
+
 }
 
 .contacts__BotonFranchise{
