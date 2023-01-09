@@ -177,6 +177,7 @@ li {
 
 .products {
   display: flex;
+  justify-content: center;
 }
 
 .products__title2,
@@ -448,6 +449,7 @@ li {
 .testimonials__circles {
   display: flex;
   gap: 16px;
+  justify-content: center;
 }
 .testimonials__circle {
   width: 12px;

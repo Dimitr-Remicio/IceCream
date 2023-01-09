@@ -51,6 +51,7 @@
   &__circles {
     display: flex;
     gap: 16px;
+    justify-content: center
   }
   &__circle {
     @include width-height(12px, 12px);
