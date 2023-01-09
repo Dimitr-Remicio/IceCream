@@ -215,6 +215,124 @@ li {
   background-color: #C2E297;
 }
 
+.testimonials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 80px;
+}
+.testimonials__img {
+  margin-bottom: 32px;
+}
+.testimonials__review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 280px;
+  height: 308px;
+  background: #fafafa;
+  position: relative;
+  margin-bottom: 16px;
+}
+.testimonials__quotes {
+  position: absolute;
+  top: 30px;
+  left: 53px;
+}
+.testimonials__text {
+  font-weight: 500;
+  font-size: 12px;
+  font-family: "DM Sans";
+  line-height: 255%;
+  text-align: center;
+  text-decoration: 1px underline rgb(225, 225, 225);
+  width: 157px;
+  height: 239px;
+  z-index: 1;
+}
+.testimonials__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.testimonials__dot {
+  width: 4px;
+  height: 4px;
+  background-color: #c7133e;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.testimonials__reviewer {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "DM Sans";
+  text-align: center;
+  line-height: 186%;
+  margin-bottom: 16px;
+}
+.testimonials__circles {
+  display: flex;
+  gap: 16px;
+}
+.testimonials__circle {
+  width: 12px;
+  height: 12px;
+  background: #d9d9d9;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .testimonials__review {
+    width: 620px;
+    height: 164px;
+    margin-bottom: 4px;
+  }
+  .testimonials__quotes {
+    position: absolute;
+    top: 20px;
+    left: 6px;
+  }
+  .testimonials__text {
+    width: 515px;
+    height: 83px;
+    line-height: 216%;
+    letter-spacing: 0.04em;
+    font-family: "DM Sans";
+    font-size: 14px;
+  }
+  .testimonials__reviewer {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1280px) {
+  .testimonials__review {
+    width: 968px;
+    height: 138px;
+    margin-bottom: 16px;
+  }
+  .testimonials__quotes {
+    position: absolute;
+    top: 32px;
+    left: 72px;
+  }
+  .testimonials__text {
+    width: 750px;
+    height: 52px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    font-family: "DM Sans";
+    font-size: 16px;
+  }
+  .testimonials__reviewer {
+    font-size: 20px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
