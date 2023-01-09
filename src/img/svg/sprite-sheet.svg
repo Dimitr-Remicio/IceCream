@@ -113,12 +113,15 @@
             <ellipse cx="173" cy="172" fill="#FFA5BA" rx="173" ry="172" />
         </symbol>
         <symbol id="mayor-que">
-            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" fill="none">
                 <path stroke="#D41443" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="m1.107 1 5.258 4-5.258 4" />
         </symbol>
 
-    
+        <symbol id="homedots">
+              <circle cx="3" cy="3" r="3" fill="#FFFFFF"/>
+              <circle cx="13" cy="3" r="3" fill="#FFFFFF"/>
+              <circle cx="23" cy="3" r="3" fill="#FFFFFF"/>
+        </symbol>
        
     </defs>
 </svg>
