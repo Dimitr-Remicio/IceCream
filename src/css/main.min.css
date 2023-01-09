@@ -313,12 +313,20 @@ li {
   padding-bottom: 20px;
 }
 
+.contacts__correo:hover {
+  color: #D41443;
+}
+
 .contacts__text2 {
   padding-bottom: 20px;
 }
 
 .contacts__telefono {
   padding-top: 20px;
+}
+
+.contacts__telefono:hover {
+  color: #D41443;
 }
 
 .contacts__horario {
