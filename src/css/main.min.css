@@ -219,11 +219,7 @@ li {
   display: flex;
   box-sizing: border-box;
   background: #FFF5F6;
-}
-
-.contacts__subcontacts {
-  padding: 50px;
-  margin-top: -150px;
+  justify-content: center;
 }
 
 .container {
