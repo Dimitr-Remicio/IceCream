@@ -1,0 +1,195 @@
+.contacts{
+  display: flex;
+  box-sizing: border-box;
+  background: #FFF5F6;
+  justify-content: center;
+  
+ 
+}
+
+
+.container{
+  display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    align-items: flex-end;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 16px;
+  
+}
+
+
+
+
+.contacts__contenedores{
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  background: #FFFFFF;
+  background-color: #FFFFFF;
+  border-radius: 24px;
+  margin: 16px;
+  justify-content: center;
+  align-items: center;
+  width: 368px;
+  height: 538px;
+  padding: 40px;
+
+  //para revisar margin y padddin// 
+  margin: 5px;
+  border: 5px;
+  
+}
+
+
+
+
+//--------------------------------------------------------//
+
+
+.contacts__titulo,
+.contacts__titulo2 {
+  font-weight: 500;
+
+  color: #FFFFFF;
+  font-family: 'DM Sans';
+  font-style: normal;
+  border: #FFF5F6;
+  font-size: 16px;
+  line-height: 186%;
+  /* or 30px */
+
+  text-align: center;
+}
+
+ .contacts__titulo{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 73px;
+  height: 28px;
+  background: #F0D1A5;
+  border-radius: 6px;
+  padding-left: 15px;
+  
+}
+
+.contacts__titulo2 {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 138px;
+  height: 28px;
+
+  background: #C2E297;
+  border-radius: 6px;
+
+  padding-left: 20px;
+  
+ 
+}
+
+
+
+.contacts__subtitulos {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+
+
+  color: #000000;
+  padding-top: 20px;
+}
+
+.contacts__text1,
+.contacts__text2,
+.contacts__telefono,
+.contacts__correo {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 183%;
+  color: #907E82;
+
+}
+.contacts__correo{
+    padding-bottom: 20px;
+}
+.contacts__correo:hover{
+  color: #D41443;
+}
+.contacts__text2{
+  padding-bottom: 20px;
+}
+
+.contacts__telefono{
+  padding-top: 20px;
+}
+.contacts__telefono:hover{
+  color: #D41443;
+}
+
+.contacts__horario {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+padding-bottom: 20px;
+  color: #FFA5BA;
+}
+
+.contacts__btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 35%;
+  
+  
+}
+
+.contacts__BotonLocalication,
+.contacts__BotonFranchise{
+  background: #FFFFFF;
+  border-radius: 22px;
+  width: 198px;
+  height: 44px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #D41443;
+  padding: 12px;
+  margin: 12px;
+  border: #FFF5F6;
+}
+
+.contacts__BotonFranchise{
+  padding-left: 58px;
+}
+
+.contacts__BotonLocalication{
+  padding-left: 28px;
+}
+
+.contacts__BotonFranchise:hover,
+.contacts__BotonLocalication:hover{
+  background: #D41342;
+  color: #FFF5F6;
+}
+
+.contacts__separador{
+   
+  width: 288px;
+  size: 5px;
+  border: 1px solid #E1E1E1;
+  
+}
