@@ -355,8 +355,8 @@ li {
     justify-content: flex-end;
     margin: 0 auto;
     gap: 35px;
-    padding: 30px 20px 20px;
-    width: 28vw;
+    padding: 30px 20px;
+    width: 25vw;
     height: 500px;
     border-radius: 25px;
     box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.16);
@@ -381,7 +381,7 @@ li {
   .div__img {
     display: flex;
     position: absolute;
-    width: 28vw;
+    width: 25vw;
     height: 100px;
   }
 }
