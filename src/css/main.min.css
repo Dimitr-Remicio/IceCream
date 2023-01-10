@@ -385,6 +385,77 @@ li {
     height: 100px;
   }
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 2px;
+}
+.gallery__list {
+  list-style-type: none;
+  padding: 0px;
+}
+.gallery__image {
+  width: 43.59px;
+  height: 43.86px;
+  transition: all 250ms;
+}
+.gallery__image:hover {
+  transform: scale(1.2);
+}
+.gallery .img--four {
+  width: 89.4px;
+  height: 89.61px;
+  width: 89.4px;
+  height: 89.61px;
+}
+.gallery .column {
+  flex-direction: column;
+}
+.gallery .size {
+  margin-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    gap: 6.07px;
+  }
+  .gallery__image {
+    width: 104.62px;
+    height: 105.14px;
+  }
+  .gallery .img--four {
+    width: 214.55px;
+    height: 214.81px;
+  }
+  .gallery .size {
+    margin-bottom: 65px;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery {
+    gap: 8px;
+    margin: 120px 94px 120px 93px;
+  }
+  .gallery__image {
+    width: 138px;
+    height: 138.68px;
+  }
+  .gallery .img--four {
+    width: 283px;
+    height: 283.34px;
+  }
+  .gallery .size {
+    margin-bottom: 95px;
+  }
+}
 .testimonials {
   display: flex;
   justify-content: flex-start;
