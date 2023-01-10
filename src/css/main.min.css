@@ -425,6 +425,7 @@ body {
 
 @media (min-width: 768px) {
   .gallery {
+    justify-content: center;
     gap: 6.07px;
   }
   .gallery__image {
@@ -441,6 +442,7 @@ body {
 }
 @media (min-width: 1200px) {
   .gallery {
+    justify-content: center;
     gap: 8px;
     margin: 120px 94px 120px 93px;
   }
