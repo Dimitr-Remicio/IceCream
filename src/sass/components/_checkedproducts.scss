@@ -43,17 +43,8 @@ input{
     }
     #check3:checked ~ #check3{
         display: none;
-    }
-    #svg-up{
-        display: none;
-    }
-    #svg-up:checked{
-        display: none;
-    }
-    #svg-down:checked ~ #svg-up{
-        display: block;
-    }
-    #svg-up:checked ~ #svg-down{
-        display: block;
-    }
-    
+    }    
+    #svg-down:checked {
+        transform: rotate(90deg);
+     }
+   

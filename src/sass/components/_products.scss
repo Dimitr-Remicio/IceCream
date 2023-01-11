@@ -128,9 +128,10 @@
     cursor: pointer;
             fill: #e7e7e7;
         transition: $transition;
-
-    &:hover{
-        fill: #ffffff;
+        
+        &:hover{
+            fill: #ffffff;
+            transform: rotate(180deg);
         transition: $transition;
     }
 }
