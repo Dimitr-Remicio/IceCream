@@ -406,8 +406,7 @@ li {
   }
 }
 .about {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background: #fff5f6;
 }
 
@@ -423,6 +422,21 @@ li {
   height: 21px;
   left: 58px;
   line-height: 21px;
+  cursor: pointer;
+}
+
+.about__title2:hover {
+  letter-spacing: 15px;
+  padding: 0;
+  transition: 1s;
+  transition-timing-function: ease-in;
+}
+
+.about__title3:hover {
+  letter-spacing: 20px;
+  padding: 0;
+  transition: 2s;
+  transition-timing-function: ease-in-out;
 }
 
 .about__title3 {
@@ -447,6 +461,12 @@ li {
 .about__img img {
   width: 280px;
   height: 279px;
+  cursor: pointer;
+}
+
+.about__img :hover {
+  transform: rotate(45deg);
+  transition: 3s;
 }
 
 .about__paragraph {
@@ -468,6 +488,12 @@ li {
   color: #000000;
   padding-right: 80px;
   margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.about__paragraph1:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
 }
 
 .about__paragraph2 {
@@ -476,11 +502,17 @@ li {
   color: #907e82;
   padding-top: 50px;
   padding-right: 80px;
-  background-image: url(../../img/sectionbg1\ 1.png);
+  background-image: url(../../img/sectionbg1\1 .png);
   background-size: 280px;
   background-repeat: no-repeat;
   background-position: top left;
   margin-right: 20px;
+  cursor: pointer;
+}
+
+.about__paragraph2:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
 }
 
 .about__button {
@@ -503,6 +535,11 @@ li {
   color: #d41443 #d41443;
 }
 
+.about__button:hover {
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
 @media screen and (min-width: 768px) {
   .about {
     justify-content: center;
@@ -514,12 +551,17 @@ li {
   }
   .about__title2 {
     margin-top: 60px;
-    padding: 0 242px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 29.77px;
   }
   .about__title3 {
-    margin-top: 16px;
+    margin-top: 26px;
     padding: 0 170px;
     height: 55px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 30px;
   }
   .about__img {
     margin-right: 0px;
@@ -572,12 +614,14 @@ li {
     padding: 0 425px;
     font-size: 30px;
     line-height: 34px;
+    letter-spacing: 0.04em;
   }
   .about__title3 {
     padding: 0 333px;
     height: 55px;
     font-size: 58px;
     line-height: 66px;
+    letter-spacing: 0.06em;
   }
   .about__img {
     margin-top: 60px;
