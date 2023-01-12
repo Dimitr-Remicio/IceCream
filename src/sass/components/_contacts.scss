@@ -1,31 +1,38 @@
+
+
+
+
+
+
+
+//-------------------aqui inician los estilos de la seccion contacs ---------------------------------------//
+
 .contacts{
   display: flex;
   box-sizing: border-box;
   background: #FFF5F6;
   
-  
- 
 }
 
 .contacts__subcontacts{
-  padding: 50px;
+  //padding: 50px;
   margin-top: -150px;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .container{
   display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    
-    align-items: flex-end;
-    padding-left: 25px;
-    padding-right: 25px;
+   gap: 32px;
+   align-items: flex-end;
+    //padding-left: 25px;
+    //padding-right: 25px;
     margin: 16px;
   
 }
-
-
-
 
 .contacts__contenedores{
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -38,6 +45,7 @@
   width: 368px;
   height: 538px;
   padding: 40px;
+  justify-content: center;
 
   //para revisar margin y padddin// 
   margin: 5px;
@@ -148,10 +156,11 @@ padding-bottom: 20px;
 }
 
 .contacts__btn{
+  padding: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 35%;
+  
   
   
 }
@@ -197,3 +206,88 @@ padding-bottom: 20px;
   border: 1px solid #E1E1E1;
   
 }
+
+
+
+
+
+
+// parte responsiva-----------------------------------------------------------------------------------------------------//
+
+
+
+@media screen and (max-width: 1280px) {
+
+  .contacts 
+  {
+      display: flex;
+  
+  .contacts__contenedores{
+        width: 100%;
+        
+        justify-content: space-between;
+          align-items: center;
+          
+          
+          //padding: 20px;
+          justify-content: center;
+        
+      .contacts__separador{
+        width: 100%;
+      }
+    
+  }
+  }
+  .contacts__btn{
+    width: 224px;
+      
+      padding: auto;
+  }
+  .container{
+    gap:32px;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .contacts {
+    
+
+
+    .contacts__btn {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      
+      justify-content: center;
+      margin: auto;
+
+
+    }
+  }
+
+ 
+}
+
+@media screen and (max-width: 480px) {
+  .contacts {
+
+
+
+    .contacts__btn {
+      
+      align-items: center;
+      width: 280px;
+      //height: 412px;
+    }
+  }
+.container{
+  flex-direction: column;
+  
+}
+}
+//aqui terminan los estilos de la seccion contacts ------------------------------------//

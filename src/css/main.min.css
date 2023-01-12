@@ -222,17 +222,19 @@ li {
 }
 
 .contacts__subcontacts {
-  padding: 50px;
   margin-top: -150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 32px;
   align-items: flex-end;
-  padding-left: 25px;
-  padding-right: 25px;
   margin: 16px;
 }
 
@@ -247,6 +249,7 @@ li {
   width: 368px;
   height: 538px;
   padding: 40px;
+  justify-content: center;
   margin: 5px;
   border: 5px;
 }
@@ -340,10 +343,10 @@ li {
 }
 
 .contacts__btn {
+  padding: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 35%;
 }
 
 .contacts__BotonLocalication,
@@ -386,6 +389,48 @@ li {
   border: 1px solid #E1E1E1;
 }
 
+@media screen and (max-width: 1280px) {
+  .contacts {
+    display: flex;
+  }
+  .contacts .contacts__contenedores {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+  }
+  .contacts .contacts__contenedores .contacts__separador {
+    width: 100%;
+  }
+  .contacts__btn {
+    width: 224px;
+    padding: auto;
+  }
+  .container {
+    gap: 32px;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts .contacts__btn {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contacts .contacts__btn {
+    align-items: center;
+    width: 280px;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
 * {
   margin: 0;
   padding: 0;
