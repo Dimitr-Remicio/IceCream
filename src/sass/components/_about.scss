@@ -1,0 +1,225 @@
+.about {
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff5f6;
+}
+.about__titlecontainer{
+  font-family: 'Titan One';
+}
+
+.about__title2 {
+  margin-top: 60px;
+  color: $color-h3;
+  text-align: center;
+  font-size: 18;
+  height: 21px;
+  left: 58px;
+  line-height: 21px;
+}
+.about__title3 {
+  padding-left: 40px;
+  padding-right: 40px;
+  color: $color-h2;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 34;
+  height: 76px;
+  left: 56px;
+}
+
+.about__img {
+  margin-right: 20px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.about__img img {
+  width: 280px;
+  height: 279px;
+}
+.about__paragraph {
+  justify-content: center;
+  align-content: center;
+  width: 320px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 19.44px;
+  padding-left: 20px;
+}
+
+.about__paragraph1 {
+  margin-top: 40px;
+  width: 220;
+  height: 79px;
+  color: $color-black;
+  padding-right: 80px;
+  margin-bottom: 5px;
+}
+.about__paragraph2 {
+  width: 240;
+  height: 181px;
+  color: #907e82;
+  padding-top: 50px;
+  padding-right: 80px;
+  background-image: url(../../img/sectionbg1\ 1.png);
+  background-size: 280px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin-right: 20px;
+}
+.about__button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 22px;
+  background-color: $color-white;
+  border: 0px;
+  box-shadow: $primary-shadow;
+  width: 176px;
+  height: 44px;
+  margin-top: 90px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-h2 #d41443;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    justify-content: center;
+    align-content: center;
+    width: 768px;
+  }
+
+  .container {
+    width: 768px;
+  }
+
+  .about__title2 {
+    margin-top: 60px;
+    padding: 0 242px;
+  }
+  .about__title3 {
+    margin-top: 16px;
+    padding: 0 170px;
+    height: 55px;
+  }
+  .about__img {
+    margin-right: 0px;
+  }
+  .about__img img {
+    width: 336px;
+    height: 335px;
+    margin-right: 0px;
+  }
+  .about__paragraph {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 768px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24.64px;
+    letter-spacing: 0.04em;
+  }
+
+  .about__paragraph1 {
+    padding-right: 0px;
+    width: 354px;
+  }
+  .about__paragraph2 {
+    margin-top: 40px;
+    padding: 0px;
+    padding-right: 0px;
+    width: 354px;
+    background: #fff5f6;
+    height: 155px;
+  }
+  .about__button {
+    background-color: $color-white;
+    border: 0px;
+    margin-top: -5px;
+    margin-left: 190px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about {
+    justify-content: center;
+    align-content: center;
+    width: 1280px;
+    height: 797px;
+  }
+
+  .container {
+    width: 1280px;
+  }
+
+  .about__title2 {
+    padding: 0 425px;
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .about__title3 {
+    padding: 0 333px;
+    height: 55px;
+    font-size: 58px;
+    line-height: 66px;
+  }
+  .about__img {
+    margin-top: 60px;
+  }
+  .about__img img {
+    width: 501px;
+    height: 501px;
+    padding-right: 99px;
+    padding-top: 60px;
+  }
+
+  .about__paragraph {
+    padding: 0px;
+    height: 521px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 1280px;
+    background-image: url(../../img/sectionbg1\ 1.png);
+    background-size: 1280px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-size: 16px;
+    line-height: 28.16px; 
+    letter-spacing: 0.04em;
+  }
+  .about__paragraph1 {
+    margin-bottom: 32px;
+    width: 463px;
+    padding-top: 150px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    padding-right: 0px;
+  }
+  .about__paragraph2 {
+    padding-top: 60px;
+    padding-right: 0px;
+    width: 463px;
+    font-size: 14px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
+  }
+  .about__button {
+    background-color: $color-white;
+    border: 0px;
+    margin-top: -120px;
+    margin-left: 190px;
+  }
+}
