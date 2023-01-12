@@ -4,77 +4,189 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.min.css" />
+    <!-- <link rel="stylesheet" href="css/main.min.css" /> -->
+    <link rel="stylesheet" href="sass/main.css"/>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
     <title>IceCream</title>
 </head>
+<body>
 <header>
     <div class="container__header">
-      <!-- nav -->
+      <!------------------ nav -------------->
       <nav class="container__nav">
-        <a class="nav__logo" href="">
+        <div class="nav__logo">
           <svg>
             <use href="./img/svg/sprite-sheet.svg#logo"></use>
           </svg>
-        </a>
+        </div>
 
+         <!-- --------- button buy windows high -------->
+          <button class="nav__buy nav__buy--high">
+              Buy now
+              <svg class="nav__mayor-que" height="15" width="15">
+                <use href="./img/svg/sprite-sheet.svg#mayor-que"></use>
+              </svg>
+            </button>
+            <!-- menu desplegable -->
         <div class="nav__menu">
           <input type="checkbox" id="checked" class="nav__checkbox" />
 
+          <!-- ------ menu  acciones desplegables ------------->
           <div class="nav__links">
-            <div class="nav__exit">
-              <label for="checked">
-                <svg class="exit__svg" height="30" width="30">
+            <!-- -------- salir del menu ----------- -->
+            <div class="nav">
+              <label for="checked" class="nav__exit nav__exit--label">
+                <svg label__svg>
                   <use href="./img/svg/sprite-sheet.svg#close"></use>
                 </svg>
               </label>
             </div>
-
-            <button class="nav__buy">
+            <!-- ---------- button buy windows small------- -->
+            <button class="nav__buy nav__buy--small">
               Buy now
-              <svg class="nav__mayor-que" height="12" width="12">
-                <use href="./img/svg/sprite-sheet.svg#mayor-que"></use>
+              <svg class="nav__mayor-que" height="20" width="20">
+                <use href="./img/svg/sprite-sheet.svg#mayor-que">  </use>
               </svg>
             </button>
 
-            <ul class="nav__ul--links">
-              <li class="links__text--current">
+            <!------------------¡¡¡¡¡important!!!! menu to display hidden content ------------>
+            <div class="container-ul">
+              <ul class="nav__ul--links">
+
+
+              <li class="nav__ul--text text--current">
                 <a href="#" class="link__a--current">Home</a>
               </li>
-              <li class="links__text">
+
+              <li class="nav__ul--text">
                 <a href="#" class="link__a">About Us</a>
               </li>
-              <li class="links__text">
+
+              <li class="nav__ul--text">
                 <a href="#" class="link__a">How it's made?</a>
               </li>
-              <li class="links__text">
+
+              <li class="nav__ul--text">
                 <a href="#" class="link__a">Our produts</a>
               </li>
-              <li class="links__text">
+
+              <li class="nav__ul--text">
                 <a href="#" class="link__a">Contact</a>
               </li>
+
             </ul>
+            </div>
+          
+
           </div>
+
+          <!-- --------- menu para mostrar contenido oculto -------------->
           <label for="checked" class="label__content">
-            <svg class="label__svg" height="40px" width="40px">
+            <svg class="label__svg svg--1">
               <use href="./img/svg/sprite-sheet.svg#-"></use>
             </svg>
-            <svg class="label__svg svg--2">
+            <svg class="label__svg  svg--2">
               <use href="./img/svg/sprite-sheet.svg#-"></use>
             </svg>
-            <svg class="label__svg svg--3">
+            <svg class="label__svg  svg--3">
               <use href="./img/svg/sprite-sheet.svg#-"></use>
             </svg>
           </label>
-</head>
-<header>
+        </nav>
+         <!-- svgs and images floats -->
+      <div class="container__float-svg">
+        <div class="container__svg">
+          <svg class="container__svg--ellipse" width="346" height="344">
+            <use href="./img/svg/sprite-sheet.svg#ellipse"></use>
+          </svg>
+        </div>
+        <div class="container__float-img">
+          <div class="container__img ">
+            <img
+              src="./img/slider-pic7 1.png"
+              alt="IceCream"
+              class="container__ice-cream"
+              height="410px"
+              width="171px"
+            />
+          </div>
+        </div>
 
+
+      </div>
+
+      <!-- content in the header texts -->
+      <section class="hero">
+        <div class="hero__title">
+          <h1 class="hero__title--h1">
+            ICE CREAM <br />
+            MADE WITH <br />
+            <h2 class="hero__title--h2">PASSION</h2>
+          </h1>
+        </div>
+        <div class="hero__button">
+          <button type="button" class="hero__button hero__button--products">
+            Products
+          </button>
+          <button type="button" class="hero__button hero__button--made">
+            How it's made
+          </button>
+        </div>
+      </div>
+      <!-- ---------- section product and numbers ---------- -->
+      <section class="product-hero">
+        <div class="product-hero__group1">
+          <svg class="product-hero__svg" width="16" height="16">
+            <use href="./img/svg/sprite-sheet.svg#ellipse2" > </use>
+          </svg>
+          <h2 class="product-hero__number">16</h2>
+          <h6 class="product-hero__name">cafes</h6>
+        </div>
+        <div class="product-hero__group2">
+          <svg class="product-hero__svg" width="16" height="16">
+            <use href="./img/svg/sprite-sheet.svg#ellipse2"> </use>
+           
+          </svg>
+          <h2 class="product-hero__number">23</h2>
+          <h6 class="product-hero__name">food trucks</h6>
+  
+        </div>
+      </section>
+      <!-- ----------- content footer of hero-header------- -->
+      <section class="hero-footer">
+        <div class="hero-colum1">
+          <img class="column1__img"
+           src="./img/slider-pic5 1.png" alt="leche"
+           width="152"
+           height="154">
+
+           <div class="fila2">
+            <h6 class="fila2__text">
+              Lorem ipsum dolor sit amet, 
+              consectetur adipiscing elit,
+              sed do eiusmod tempor 
+              incididunt ut labore et
+         </h6>
+         <img class="fila2__img-share"
+         src="./img/arrow-right 3.jpg" alt="next"
+         height="18"
+         width="18">
+          </div>
+         
+        </div>
+        <div class="hero-column3">
+          <img class="hero-column3__img-eat" src="./img/slider-pic4 1.png" alt="eat"
+          height="150"
+          width="190">
+
+        </div>
+      </section>
 </header>
 
-<body>
+
     <!--------------------Section products----------------------------- -->
 
     <section class="products">
@@ -155,7 +267,7 @@
 
 
     <!--------------------Section Gallery----------------------------- -->
-    
+
     <section class="gallery">
             <div class="container">
               <ul class="gallery__list">
@@ -262,46 +374,8 @@
                 Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
             </p>
         </div>
-      </nav>
-      <!-- svgs and images floats -->
-      <div class="container__float-svg">
-        <div class="container__svg">
-          <svg class="container__svg--ellipse" width="346" height="344">
-            <use href="./img/svg/sprite-sheet.svg#ellipse"></use>
-          </svg>
-        </div>
-        <div class="container__float-img">
-          <div class="container__img">
-            <img
-              src="./img/slider-pic7 1.png"
-              alt="IceCream"
-              class="container__img--iceCream"
-              height="410px"
-              width="171px"
-            />
-          </div>
-        </div>
-      </div>
 
-      <!-- content in the header -->
-      <section class="section__hero">
-        <div class="hero__title">
-          <h1 class="hero__title--h1">
-            ICE CREAM <br />
-            MADE WITH <br />
-            <h2 class="hero__title--h2">PASSION</h2>
-          </h1>
-        </div>
-        <div class="hero__button">
-          <button type="button" class="hero__button hero__button--products">
-            Products
-          </button>
-          <button type="button" class="hero__button hero__button--made">
-            How it's made
-          </button>
-        </div>
-      </div>
-</header>
+
 
 <body>
 
@@ -420,7 +494,7 @@
               alt="helados"
             />
           </li>
-  
+
           <li>
             <img
               class="gallery_image"
@@ -429,7 +503,7 @@
               alt="helados"
             />
           </li>
-  
+
           <li>
             <img
               class="gallery__image"
@@ -438,7 +512,7 @@
               alt="helados"
             />
           </li>
-  
+
           <li>
             <img
               class="gallery__image"
@@ -455,7 +529,7 @@
               alt="helados"
             />
           </li>
-  
+
           <li>
             <img
               class="gallery__image"
@@ -464,7 +538,7 @@
               alt="helados"
             />
           </li>
-  
+
           <li>
             <img
               class="gallery__image"
@@ -473,7 +547,7 @@
               alt="helados"
             />
           </li>
-  
+
           <li>
             <img
               class="gallery__image"
@@ -482,7 +556,7 @@
               alt="helados"
             />
           </li>
-  
+
           <li>
             <img
               class="gallery__image"
@@ -502,7 +576,7 @@
         </ul>
       </div>
     </section>
-  
+
     <!--------------------Section CustomerReviews or Testimonials----------------------------- -->
 
     <section class="testimonials">
@@ -677,7 +751,7 @@
 
 
     </div>
-    
+
         <!--pendiente por analizar la mejor implementacion en la parte de los titulos-->
     </section>
 

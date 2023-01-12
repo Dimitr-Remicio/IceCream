@@ -1,5 +1,9 @@
 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
     <defs>
+         <symbol id="mayor-que">
+            <path stroke="#D41443" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1.107 1 5.258 4-5.258 4" />
+        </symbol>
          <symbol id="close">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path stroke="#fff" d="m1.26 1 13.48 14M1 14.74 15 1.26"/></svg>
         </symbol>
@@ -112,11 +116,10 @@
         <symbol id="ellipse">
             <ellipse cx="173" cy="172" fill="#FFA5BA" rx="173" ry="172" />
         </symbol>
-        <symbol id="mayor-que">
-            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" fill="none">
-                <path stroke="#D41443" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m1.107 1 5.258 4-5.258 4" />
+        <symbol id="ellipse2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><circle r="8" fill="#fff" transform="matrix(-1 0 0 1 8 8)"/></svg>
         </symbol>
+       
        
     </defs>
 </svg>
