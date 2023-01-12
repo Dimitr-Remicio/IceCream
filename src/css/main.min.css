@@ -229,7 +229,7 @@ li {
   flex-direction: column;
 }
 
-.container {
+.contenedor {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -406,7 +406,7 @@ li {
     width: 224px;
     padding: auto;
   }
-  .container {
+  .contenedor {
     gap: 32px;
     flex-wrap: nowrap;
     margin-left: auto;
@@ -427,7 +427,7 @@ li {
     align-items: center;
     width: 280px;
   }
-  .container {
+  .contenedor {
     flex-direction: column;
   }
 }
