@@ -1220,7 +1220,7 @@ li {
 }
 .gallery {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
   box-sizing: border-box;
@@ -1251,7 +1251,41 @@ li {
   margin-bottom: 35px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 480px) {
+  .gallery {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 2px;
+  }
+  .gallery__list {
+    list-style-type: none;
+    padding: 0px;
+  }
+  .gallery__image {
+    width: 70.59px;
+    height: 70.86px;
+    transition: all 250ms;
+  }
+  .gallery__image:hover {
+    transform: scale(1.1);
+  }
+  .gallery .img--four {
+    width: 110.4px;
+    height: 110.61px;
+    width: 120.4px;
+    height: 120.61px;
+  }
+  .gallery .column {
+    flex-direction: column;
+  }
+  .gallery .size {
+    margin-bottom: 35px;
+  }
+}
+@media screen and (min-width: 768px) {
   .gallery {
     justify-content: center;
     gap: 6.07px;
@@ -1268,7 +1302,7 @@ li {
     margin-bottom: 65px;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .gallery {
     justify-content: center;
     gap: 8px;
@@ -1571,6 +1605,48 @@ li {
   border: 1px solid #E1E1E1;
 }
 
+@media screen and (max-width: 480px) {
+  .contacts .contacts__btn {
+    align-items: center;
+    width: 280px;
+  }
+  .contenedor {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts .contacts__btn {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .contacts {
+    display: flex;
+  }
+  .contacts .contacts__contenedores {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+  }
+  .contacts .contacts__contenedores .contacts__separador {
+    width: 100%;
+  }
+  .contacts__btn {
+    width: 224px;
+    padding: auto;
+  }
+  .contenedor {
+    gap: 32px;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 input {
   display: flex;
   position: absolute;

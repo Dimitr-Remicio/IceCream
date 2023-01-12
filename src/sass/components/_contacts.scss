@@ -192,3 +192,80 @@ padding-bottom: 20px;
   border: 1px solid #E1E1E1;
   
 }
+
+
+@media screen and (max-width: 480px) {
+  .contacts {
+
+
+
+    .contacts__btn {
+      
+      align-items: center;
+      width: 280px;
+      //height: 412px;
+    }
+  }
+.contenedor{
+  flex-direction: column;
+  
+}
+}
+@media screen and (max-width: 768px) {
+
+  .contacts {
+    
+
+
+    .contacts__btn {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      
+      justify-content: center;
+      margin: auto;
+
+
+    }
+  }
+
+ 
+}
+
+@media screen and (max-width: 1280px) {
+
+  .contacts 
+  {
+      display: flex;
+  
+  .contacts__contenedores{
+        width: 100%;
+        
+        justify-content: space-between;
+          align-items: center;
+          
+          
+          //padding: 20px;
+          justify-content: center;
+        
+      .contacts__separador{
+        width: 100%;
+      }
+    
+  }
+  }
+  .contacts__btn{
+    width: 224px;
+      
+      padding: auto;
+  }
+  .contenedor{
+    gap:32px;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+}
+
+//aqui terminan los estilos de la seccion contacts ------------------------------------//
