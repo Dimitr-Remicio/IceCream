@@ -1,0 +1,109 @@
+
+.advantages {
+    margin-top: 0px;
+    margin-bottom: 120px;
+    padding: 0%;
+
+
+    &__list {
+        @include flex-container (space-between, align-items, flex-
+
+direction);
+        position: relative;
+        width: 1088px;
+    }
+
+    &__container {
+        width: 288px;
+        transition: all 1s ease-in-out;
+    }
+
+    &__container:hover{
+        transform: rotate(360deg);
+    }    
+
+    &__value {
+        @include text-height-spacing-family (66.41px, letter-
+
+spacing, 'titan one');
+        @include text-weight-size (400, 58px);
+        color: $accent-color;
+        margin-bottom: 16px;
+        width: 288px;
+        margin-right: 0px;
+        margin-block-start: 0em;
+    }
+
+    &__text {
+        @include text-weight-size (700, font-size);
+        @include text-height-spacing-family ();
+        margin: 0px;
+        margin-right: 0px;        
+    }
+
+    &__svg {
+        @include width-height (50px,50px);
+        margin-bottom: 40px;
+        animation: rotatesvg 4s infinite linear;
+        position: relative;
+        transform-origin: 50%, 50%;        
+    }
+
+    
+}
+        
+
+@keyframes rotatesvg {
+    0%{
+        transform: rotate(0deg); transform-origin: 50%, 50%;
+    }
+    100%{
+        transform: rotate(360deg); transform-origin: 50%, 50%;
+    }    
+}
+
+@media screen and (max-width: 768px){
+    .advantages__list {
+        width: 527px;
+    }
+
+    .advantages__container{
+        width: 159px;
+    }
+
+    .advantages__value{
+        font-size: 48px;
+        line-height: 55px;
+    }
+
+    .advantages__text{
+        font-size: 14px;
+        line-height: 176%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .advantages__list {
+        flex-direction: column;
+    }
+
+    .advantages__container{
+        width: 230px;
+    }
+
+    .advantages__value{
+        font-size: 36px;
+        line-height: 41px;
+        margin-bottom: 10px;
+    }
+
+    .advantages__text{
+        font-size: 12px;
+        line-height: 170%;
+        margin-bottom: 32px;
+    } 
+
+    .advantages__svg{
+        margin-bottom: 16px;
+    }
+}
