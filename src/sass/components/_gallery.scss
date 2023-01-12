@@ -1,7 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-}
 
 .gallery {
   display: flex;
@@ -19,7 +15,7 @@ body {
     transition: all 250ms;
   }
   &__image:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   .img--four {
     @include width-height(89.4px, 89.61px);
