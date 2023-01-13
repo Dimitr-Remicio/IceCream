@@ -1,7 +1,6 @@
 .contacts{
   display: flex;
   box-sizing: border-box;
-  background: #FFF5F6;
   justify-content: center;
   flex-wrap: wrap;
   gap: 44px;
@@ -16,15 +15,15 @@
 .containers{
     gap: 50px;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
 
 .contacts__contenedores{
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  background: #FFFFFF;
-  background-color: #FFFFFF;
+  background-color: var(--rectangle-color);
   border-radius: 24px;
   margin: 16px;
   justify-content: center;
@@ -49,7 +48,7 @@
 .contacts__titulo2 {
   font-weight: 500;
 
-  color: #FFFFFF;
+  color: var(--text-contrasted);
   font-family: 'DM Sans';
   font-style: normal;
   border: #FFF5F6;
@@ -66,7 +65,7 @@
   align-items: center;
   width: 73px;
   height: 28px;
-  background: #F0D1A5;
+  background: var(--rectangle-color2);
   border-radius: 6px;
   padding-left: 15px;
   
@@ -79,7 +78,7 @@
   width: 138px;
   height: 28px;
 
-  background: #C2E297;
+  background: var(--rectangle-color2);
   border-radius: 6px;
 
   padding-left: 20px;
@@ -98,7 +97,7 @@
   letter-spacing: 0.04em;
 
 
-  color: #000000;
+  color: var(--text);
   padding-top: 20px;
 }
 
@@ -111,7 +110,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 183%;
-  color: #907E82;
+  color: var(--text3);
 
 }
 .contacts__correo{
@@ -151,7 +150,7 @@ padding-bottom: 20px;
 
 .contacts__BotonLocalication,
 .contacts__BotonFranchise{
-  background: #FFFFFF;
+  background: var(--button-color);
   border-radius: 22px;
   width: 198px;
   height: 44px;
@@ -163,7 +162,7 @@ padding-bottom: 20px;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #D41443;
+  color: var(--text);
   padding: 12px;
   margin: 12px;
   border: #FFF5F6;
@@ -181,7 +180,7 @@ padding-bottom: 20px;
 
 .contacts__BotonFranchise:hover,
 .contacts__BotonLocalication:hover{
-  background: #D41342;
+  background: var(--button-hover);
   color: #FFF5F6;
 }
 
@@ -189,7 +188,7 @@ padding-bottom: 20px;
    
   width: 288px;
   size: 5px;
-  border: 1px solid #E1E1E1;
+  border: 1px solid var(--linecolor);
   
 }
 
@@ -200,7 +199,9 @@ padding-bottom: 20px;
 
 
     .contacts__btn {
-      
+      display: flex;
+      align-items: center;
+      justify-content: center;
       align-items: center;
       width: 280px;
       //height: 412px;
@@ -212,9 +213,13 @@ padding-bottom: 20px;
 }
 }
 @media screen and (max-width: 768px) {
+  .containers {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
 
   .contacts {
-    
 
 
     .contacts__btn {
@@ -255,7 +260,7 @@ padding-bottom: 20px;
   }
   }
   .contacts__btn{
-    width: 224px;
+    width: 100%;
       
       padding: auto;
   }

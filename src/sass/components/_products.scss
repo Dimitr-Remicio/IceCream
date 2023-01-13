@@ -1,7 +1,8 @@
 // INITIAL WIDTH 3
 .products{
     display: flex;
-    justify-content: center
+    justify-content: center;
+    
 }
 
 .products__title2,
@@ -18,7 +19,7 @@
     font-size: 22px;
     font-style: normal;
     line-height: 10px;
-    color: $color-white;
+    color: var(--text-inversed);
     letter-spacing: 0.1em;
     text-transform: uppercase;
 
@@ -68,7 +69,7 @@
     align-items: center;
     justify-content: flex-start;
     margin: 0;
-    padding: 200px 40px 20px 40px;
+    padding: 190px 40px 20px 40px;
     gap: 40px;
     height: auto;
     max-height: 550px;
@@ -100,18 +101,19 @@
 }
 &__description{
     display: flex;
-    
+    width: auto;
+    height: auto;
+
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 152%;
     
-    overflow: hidden;
 
     text-align: center;
 
-    color: $color-white;
+    color: var(--text-inversed);
 }
 
 &__svg-extend{

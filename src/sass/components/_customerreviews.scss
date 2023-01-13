@@ -21,9 +21,10 @@
   &__text {
     @include text-weight-size(500, 12px);
     font-family: "DM Sans";
+    color: var(--text);
     line-height: 255%;
     text-align: center;
-    text-decoration: 1px underline rgba(225, 225, 225, 1);
+    text-decoration: 1px underline var(--linecolor2);
 
     @include width-height(157px, 239px);
     z-index: 1;
@@ -36,7 +37,7 @@
   }
   &__dot {
     @include width-height(4px, 4px);
-    background-color: #c7133e;
+    background-color: var(--dots);
     border-radius: 50%;
     margin-bottom: 16px;
   }
@@ -44,6 +45,7 @@
     @include text-weight-size(500, 14px);
     font-family: 'DM Sans';
     text-align: center;
+    color: var(--text);
     line-height: 186%;
     margin-bottom: 16px;
   }

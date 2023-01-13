@@ -10,6 +10,7 @@ toggle.addEventListener('click', function(){
     }else{
         body.style.background = '#1f1f1f';
         body.style.color = 'white';
+        
         body.style.transition = '2s';
     }
 });

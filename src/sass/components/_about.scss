@@ -73,7 +73,7 @@
   margin-top: 40px;
   width: 280px;
   height: 79px;
-  color: $color-black;
+  color: var(--text);
   padding-right: 80px;
   margin-bottom: 5px;
   cursor: pointer;
@@ -82,7 +82,7 @@
 .about__paragraph2 {
   width: 240px;
   height: 181px;
-  color: #907e82;
+  color: var(--text3);
   padding-top: 20px;
 
   margin-right: 20px;

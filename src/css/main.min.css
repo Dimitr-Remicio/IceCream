@@ -1,5 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+:root {
+  --accent-color: #D41443;
+  --text-inversed: #ffffff;
+  --text: #000000;
+  --text-contrasted:#ffffff;
+  --text3: #b7b7b7;
+  --background: #f9f9f9;
+  --button-color: #ffffff;
+  --button-hover: #b42a2a;
+  --rectangle-color: #ffffff;
+  --rectangle-color2: #C2E297;
+  --linecolor:#000000;
+  --linecolor2:#bababa;
+  --dots:#c7133e;
+  --dark-mode: #1f1f1f;
+  --background-color-1: #FFA5BA;
+  --background-color-2: #F0D1A5;
+  --background-color-3: #C2E297;
+  --color-h2: #d41443;
+  --color-h1: #FFFFFF;
+  --color-h3: #FFA5BA;
+  --color-lineas: #e18298;
+  --color-rosa-oscuro: #e17992;
+  --color-fondo-hero: #ffb8ca;
+  --primary-shadow: 0px 8px 30px 0px rgba(212,20,67,0.16);
+  --transition: all 250ms;
+}
+
+.darkmode {
+  --accent-color: #6a6869;
+  --text-inversed: #2b2b2b;
+  --text: #ffffff;
+  --text-contrasted:#e4e4e4;
+  --text3: #b9b8b8;
+  --rectangle-color: #414141;
+  --button-color: #653b3b;
+  --button-hover: #da5353;
+  --rectangle-color2: #d41443;
+  --linecolor:#000000;
+  --linecolor2:#ec8c8c;
+  --dots:#ffffff;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --white-mode: #f1f1f1;
+  --dark-mode: #1a1a1a;
+  --background: #2f2f2f;
+  --background-color-1: #FFA5BA;
+  --background-color-2: #F0D1A5;
+  --background-color-3: #C2E297;
+  --color-h2: #d41443;
+  --color-h1: #FFFFFF;
+  --color-h3: #FFA5BA;
+  --color-lineas: #e18298;
+  --color-rosa-oscuro: #e17992;
+  --color-fondo-hero: #ffb8ca;
+  --primary-shadow: 0px 8px 30px 0px rgba(212,20,67,0.16);
+  --transition: all 250ms;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -779,7 +838,7 @@ li {
   font-size: 22px;
   font-style: normal;
   line-height: 10px;
-  color: #ffffff;
+  color: var(--text-inversed);
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -821,7 +880,7 @@ li {
   align-items: center;
   justify-content: flex-start;
   margin: 0;
-  padding: 200px 40px 20px 40px;
+  padding: 190px 40px 20px 40px;
   gap: 40px;
   height: auto;
   max-height: 550px;
@@ -851,14 +910,15 @@ li {
 }
 .products__description {
   display: flex;
+  width: auto;
+  height: auto;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 152%;
-  overflow: hidden;
   text-align: center;
-  color: #ffffff;
+  color: var(--text-inversed);
 }
 .products__svg-extend {
   cursor: pointer;
@@ -1060,7 +1120,7 @@ li {
   margin-top: 40px;
   width: 280px;
   height: 79px;
-  color: #000000;
+  color: var(--text);
   padding-right: 80px;
   margin-bottom: 5px;
   cursor: pointer;
@@ -1069,7 +1129,7 @@ li {
 .about__paragraph2 {
   width: 240px;
   height: 181px;
-  color: #907e82;
+  color: var(--text3);
   padding-top: 20px;
   margin-right: 20px;
   cursor: pointer;
@@ -1351,9 +1411,10 @@ li {
   font-weight: 500;
   font-size: 12px;
   font-family: "DM Sans";
+  color: var(--text);
   line-height: 255%;
   text-align: center;
-  text-decoration: 1px underline rgb(225, 225, 225);
+  text-decoration: 1px underline var(--linecolor2);
   width: 157px;
   height: 239px;
   z-index: 1;
@@ -1368,7 +1429,7 @@ li {
 .testimonials__dot {
   width: 4px;
   height: 4px;
-  background-color: #c7133e;
+  background-color: var(--dots);
   border-radius: 50%;
   margin-bottom: 16px;
 }
@@ -1377,6 +1438,7 @@ li {
   font-size: 14px;
   font-family: "DM Sans";
   text-align: center;
+  color: var(--text);
   line-height: 186%;
   margin-bottom: 16px;
 }
@@ -1440,7 +1502,6 @@ li {
 .contacts {
   display: flex;
   box-sizing: border-box;
-  background: #FFF5F6;
   justify-content: center;
   flex-wrap: wrap;
   gap: 44px;
@@ -1452,12 +1513,12 @@ li {
   gap: 50px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .contacts__contenedores {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  background: #FFFFFF;
-  background-color: #FFFFFF;
+  background-color: var(--rectangle-color);
   border-radius: 24px;
   margin: 16px;
   justify-content: center;
@@ -1472,7 +1533,7 @@ li {
 .contacts__titulo,
 .contacts__titulo2 {
   font-weight: 500;
-  color: #FFFFFF;
+  color: var(--text-contrasted);
   font-family: "DM Sans";
   font-style: normal;
   border: #FFF5F6;
@@ -1488,7 +1549,7 @@ li {
   align-items: center;
   width: 73px;
   height: 28px;
-  background: #F0D1A5;
+  background: var(--rectangle-color2);
   border-radius: 6px;
   padding-left: 15px;
 }
@@ -1499,7 +1560,7 @@ li {
   align-items: center;
   width: 138px;
   height: 28px;
-  background: #C2E297;
+  background: var(--rectangle-color2);
   border-radius: 6px;
   padding-left: 20px;
 }
@@ -1511,7 +1572,7 @@ li {
   font-size: 16px;
   line-height: 186%;
   letter-spacing: 0.04em;
-  color: #000000;
+  color: var(--text);
   padding-top: 20px;
 }
 
@@ -1524,7 +1585,7 @@ li {
   font-weight: 500;
   font-size: 16px;
   line-height: 183%;
-  color: #907E82;
+  color: var(--text3);
 }
 
 .contacts__correo {
@@ -1566,7 +1627,7 @@ li {
 
 .contacts__BotonLocalication,
 .contacts__BotonFranchise {
-  background: #FFFFFF;
+  background: var(--button-color);
   border-radius: 22px;
   width: 198px;
   height: 44px;
@@ -1578,7 +1639,7 @@ li {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #D41443;
+  color: var(--text);
   padding: 12px;
   margin: 12px;
   border: #FFF5F6;
@@ -1595,18 +1656,21 @@ li {
 
 .contacts__BotonFranchise:hover,
 .contacts__BotonLocalication:hover {
-  background: #D41342;
+  background: var(--button-hover);
   color: #FFF5F6;
 }
 
 .contacts__separador {
   width: 288px;
   size: 5px;
-  border: 1px solid #E1E1E1;
+  border: 1px solid var(--linecolor);
 }
 
 @media screen and (max-width: 480px) {
   .contacts .contacts__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     align-items: center;
     width: 280px;
   }
@@ -1615,6 +1679,11 @@ li {
   }
 }
 @media screen and (max-width: 768px) {
+  .containers {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
   .contacts .contacts__btn {
     flex-direction: column;
     display: flex;
@@ -1637,7 +1706,7 @@ li {
     width: 100%;
   }
   .contacts__btn {
-    width: 224px;
+    width: 100%;
     padding: auto;
   }
   .contenedor {
@@ -1708,6 +1777,7 @@ input {
 }
 
 body {
+  background-color: var(--background);
   overflow-x: hidden;
 }
 
