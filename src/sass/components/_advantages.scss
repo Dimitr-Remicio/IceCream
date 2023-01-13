@@ -1,16 +1,15 @@
 
 .advantages {
+    display: flex;
     margin-top: 0px;
     margin-bottom: 120px;
     padding: 0%;
 
 
     &__list {
-        @include flex-container (space-between, align-items, flex-
-
-direction);
+        @include flex-container (space-between, align-items, flex-direction);
         position: relative;
-        width: 1088px;
+        width: 100%;
     }
 
     &__container {
@@ -32,16 +31,16 @@ spacing, 'titan one');
     }
 
     &__text {
+        color: var(--text);      
         @include text-weight-size (700, font-size);
         @include text-height-spacing-family ();
         margin: 0px;
-        margin-right: 0px;        
+        margin-right: 0px; 
     }
 
     &__svg {
         @include width-height (50px,50px);
         margin-bottom: 40px;
-        animation: rotatesvg 4s infinite linear;
         position: relative;
         transform-origin: 50%, 50%;        
     }
@@ -52,11 +51,9 @@ spacing, 'titan one');
 
 @media screen and (max-width: 768px){
     .advantages__list {
-        width: 527px;
-    }
-
-    .advantages__container{
-        width: 159px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
     }
 
     .advantages__value{

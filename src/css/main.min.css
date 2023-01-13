@@ -926,6 +926,7 @@ li {
   transition: all 250ms;
 }
 .products__svg-extend:hover {
+  transform: rotate(180deg);
   fill: #ffffff;
   transition: all 250ms;
 }
@@ -1279,6 +1280,7 @@ li {
   }
 }
 .advantages {
+  display: flex;
   margin-top: 0px;
   margin-bottom: 120px;
   padding: 0%;
@@ -1287,9 +1289,9 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: align-items;
-  flex-direction: flex- direction;
+  flex-direction: flex-direction;
   position: relative;
-  width: 1088px;
+  width: 100%;
 }
 .advantages__container {
   width: 288px;
@@ -1308,6 +1310,7 @@ li {
   margin-block-start: 0em;
 }
 .advantages__text {
+  color: var(--text);
   font-weight: 700;
   font-size: font-size;
   line-height: 176%;
@@ -1320,17 +1323,15 @@ li {
   width: 50px;
   height: 50px;
   margin-bottom: 40px;
-  animation: rotatesvg 4s infinite linear;
   position: relative;
   transform-origin: 50%, 50%;
 }
 
 @media screen and (max-width: 768px) {
   .advantages__list {
-    width: 527px;
-  }
-  .advantages__container {
-    width: 159px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
   }
   .advantages__value {
     font-size: 48px;

@@ -122,7 +122,8 @@
         transition: $transition;
 
     &:hover{
-        fill: #ffffff;
+            transform: rotate(180deg);
+            fill: #ffffff;
         transition: $transition;
     }
 }
@@ -130,12 +131,13 @@
     cursor: pointer;
             fill: #e7e7e7;
         transition: $transition;
-        
-        &:hover{
+}
+&__svg:hover{
             fill: #ffffff;
             transform: rotate(180deg);
         transition: $transition;
-    }
+
+
 }
 
 
