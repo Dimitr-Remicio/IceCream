@@ -1,6 +1,7 @@
 .footer {
     @include flex-container(space-between, center);
     flex-wrap: wrap;
+    padding: 30px;
 
     .logo {
         @include flex-container(space-between, flex-start, column);
@@ -55,7 +56,7 @@
                 font-size: 16px;
                 line-height: 186%;
                 letter-spacing: 0.02em;
-                color: #000000;
+                color: var(--text);
             }
 
             &__link {
@@ -72,4 +73,7 @@
 }
 .copyright{
     @include flex-container(center);
+    color: var(--text);
+    padding: 10px;
+    border-top: 0.01px solid var(--text3);
 }

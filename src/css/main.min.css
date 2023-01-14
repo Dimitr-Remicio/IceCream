@@ -2368,6 +2368,7 @@ li {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 30px;
 }
 .footer .logo {
   display: flex;
@@ -2434,7 +2435,7 @@ li {
   font-size: 16px;
   line-height: 186%;
   letter-spacing: 0.02em;
-  color: #000000;
+  color: var(--text);
 }
 .footer .footer__icons .address__link {
   font-family: "DM Sans";
@@ -2451,6 +2452,9 @@ li {
   justify-content: center;
   align-items: stretch;
   flex-direction: row;
+  color: var(--text);
+  padding: 10px;
+  border-top: 0.01px solid var(--text3);
 }
 
 input {
