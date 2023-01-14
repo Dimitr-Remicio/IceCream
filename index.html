@@ -19,6 +19,28 @@
 
   <header>
     <div class="container__header">
+      <!-- -------burbujas -------------- -->
+         <div class="bubble">
+           <div></div>
+           <div></div>
+           <div></div>
+         </div>
+            <div class="bubble2">
+           <div></div>
+           <div></div>
+           <div></div>
+         </div>
+                <div class="bubble-invest">
+           <div></div>
+           <div></div>
+           <div></div>
+         </div>
+            <div class="bubble2-invest">
+           <div></div>
+           <div></div>
+           <div></div>
+         </div>
+       
       <!------------------ nav -------------->
       <nav class="container__nav">
         <div class="nav__logo">
@@ -85,13 +107,8 @@
                   <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
                 </li>
 
-
               </ul>
             </div>
-
-
-
-          </div>
 
           <!-- --------- menu para mostrar contenido oculto -------------->
           <label for="checked" class="label__content">
@@ -109,15 +126,19 @@
       <!-- svgs and images floats -->
       <div class="container__float-svg">
         <div class="container__svg">
-          <svg class="container__svg--ellipse" width="346" height="344">
+          <svg class="container__svg--ellipse" width="380" height="380">
             <use href="./src/img/svg/sprite-sheet.svg#ellipse"></use>
           </svg>
         </div>
         <div class="container__float-img">
-          <div class="container__img ">
-            <img src="./src/img/slider-pic7 1.png" alt="IceCream" class="container__ice-cream" height="410px"
-              width="171px" />
-          </div>
+
+            <img
+              src="./src/img/slider-pic7 1.png"
+              alt="IceCream"
+              class="container__ice-cream"
+              
+            />
+
         </div>
 
 
@@ -137,7 +158,7 @@
             Products
           </button>
           <button type="button" class="hero__button hero__button--made">
-            How it's made
+            How it's made?
           </button>
         </div>
     </div>
@@ -220,6 +241,50 @@
                   <use href="./src/img/svg/sprite-sheet.svg#arrowdown" id="svg-down"></use>
                 </svg>
               </label>
+      </section>
+
+      
+  </header>
+
+  <main>
+      <!--------------------Section products----------------------------- -->
+
+      <section id="products"  class="products">
+        <div  class="container">
+          <h3 class="products__title3">100% NATURAL</h3>
+          <h2 class="products__title2">PRODUCTS</h2>
+          <ul class="products__list">
+            <li class="products__item1">
+              <div class="div__img">
+                <img class="products__img" src="./src/img/home-pic1.png" srcset="home-picl.png x1, home-picl@2x.png x2" alt="Helado de fresa" />
+              </div>
+              
+              <div class="products__rectangle1" id="rectangle">
+                <h1 class="products__title">ICE CREAM</h1>
+                <svg class="products__svg" id="svg_dots" width="26" height="6" >
+                  <use href="./src/img/svg/sprite-sheet.svg#homedots" ></use>
+                </svg>
+                
+                
+                <input type="checkbox" id="check">
+                <p class="products__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  
+                </p>
+                
+                <p class="products__description" id="checktext">
+                  Voluptatum saepe corporis explicabo culpa totam omnis aspernatur
+                  Lorem ipsum dolor  adipisicing elit.
+                </p>
+                
+                <label for="check">
+                  <svg class="products__svg" width="51" height="51">
+                    <use href="./src/img/svg/sprite-sheet.svg#arrowdown" id="svg-down"></use>
+                  </svg>
+                  </label>
+                  
+              </div>
+
 
             </div>
 
@@ -253,6 +318,7 @@
                 <svg class="products__svg-extend" id="svg" width="51" height="51">
                   <use href="./src/img/svg/sprite-sheet.svg#arrowdown"></use>
                 </svg>
+
               </label>
             </div>
 
@@ -269,6 +335,25 @@
               <svg class="products__svg" width="26" height="6">
                 <use href="./src/img/svg/sprite-sheet.svg#homedots" width="26" height="6" />
               </svg>
+                
+                
+                <input type="checkbox" id="check2">
+                <p class="products__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  
+                </p>
+                
+                <p class="products__description" id="checktext2">
+                  Voluptatum saepe corporis explicabo culpa totam omnis aspernatur
+                  Lorem ipsum dolor adipisicing elit.
+                </p>
+                
+                <label for="check2">
+                  <svg class="products__svg-extend" id="svg" width="51" height="51">
+                    <use href="./src/img/svg/sprite-sheet.svg#arrowdown" ></use>
+                  </svg>
+                  </label>
+              </div>
 
 
               <input type="checkbox" id="check3">
@@ -288,6 +373,25 @@
                 </svg>
               </label>
             </div>
+                
+                
+                <input type="checkbox" id="check3">
+                <p class="products__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  
+                </p>
+                
+                <p class="products__description" id="checktext3">
+                  Voluptatum saepe corporis explicabo culpa totam omnis aspernatur
+                  Lorem ipsum dolor  adipisicing elit.
+                </p>
+                
+                <label for="check3">
+                  <svg class="products__svg-extend" id="svg" width="51" height="51">
+                    <use href="./src/img/svg/sprite-sheet.svg#arrowdown" ></use>
+                  </svg>
+                  </label>
+              </div>
 
           </li>
 
@@ -297,7 +401,8 @@
 
     <!--------------------Section About----------------------------- -->
 
-    <section class="about">
+
+      <section id="about" class="about">
       <div class="container">
         <div class="about__titlecontainer">
           <h3 class="about__title2">TRADITION AND LOVE</h3>
@@ -352,30 +457,142 @@
         </ul>
       </div>
     </section>
-    <!--------------------Section Gallery----------------------------- -->
 
-    <section class="gallery__section">
-      <div class="container">
-        <div class="gallery">
-
-          <ul class="gallery__list">
-            <li class="gallery__item">
-              <img class="gallery__image" srcset="gallery1.png x1, gallery1@2x.png x2"
-                src="./src/img/gallery/gallery1.png" alt="helados" />
+      <!--------------------Section Advantages----------------------------- -->
+      <section id="advantages" class="advantages">
+        <div class="container">
+          <ul class="advantages__list">
+            <li class="advantages__container">
+              <svg class="advantages__svg">
+                <use href="./src/img/svg/sprite-sheet.svg#milkglass"></use>
+              </svg>
+              <h2 class="advantages__value">721</h2>
+              <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
             </li>
-          </ul>
-
-          <ul class="gallery__list column">
-            <li class="gallery__item">
-              <img class="gallery__image" srcset="gallery2.png x1, gallery2@2x.png x2"
-                src="./src/img/gallery/gallery2.png" alt="helados" />
+            <li class="advantages__container">
+              <svg class="advantages__svg">
+                <use href="./src/img/svg/sprite-sheet.svg#applebowl"></use>
+              </svg>
+              <h2 class="advantages__value">16kg</h2>
+              <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
             </li>
-
-            <li class="gallery__item">
-              <img class="gallery__image" srcset="gallery3.png x1, gallery3@2x.png x2"
-                src="./src/img/gallery/gallery3.png" alt="helados" />
+            <li class="advantages__container">
+              <svg class="advantages__svg">
+                <use href="./src/img/svg/sprite-sheet.svg#heart"></use>
+              </svg>
+              <h2 class="advantages__value">84</h2>
+              <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
             </li>
-          </ul>
+          </ul>            
+        </div>
+      </section>
+      <!--------------------Section Gallery----------------------------- -->
+
+      <section id="gallery" class="gallery__section">
+          <div class="container">
+          <div class="gallery">
+
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery1.png x1, gallery1@2x.png x2"
+                  src="./src/img/gallery/gallery1.png"
+                  alt="helados"
+                />
+              </li>
+            </ul>
+    
+            <ul class="gallery__list column">
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery2.png x1, gallery2@2x.png x2"
+                  src="./src/img/gallery/gallery2.png"
+                  alt="helados"
+                />
+              </li>
+    
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery3.png x1, gallery3@2x.png x2"
+                  src="./src/img/gallery/gallery3.png"
+                  alt="helados"
+                />
+              </li>
+            </ul>
+    
+            <ul class="gallery__list column">
+              <li class="gallery__item">
+                <img
+                  class="gallery__image img--four"
+                  srcset="gallery4.png x1, gallery4@2x.png x2"
+                  src="./src/img/gallery/gallery4.png"
+                  alt="helados"
+                />
+              </li>
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery5.png x1, gallery5@2x.png x2"
+                  src="./src/img/gallery/gallery5.png"
+                  alt="helados"
+                />
+              </li>
+            </ul>
+    
+            <ul class="gallery__list column">
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery6.png x1, gallery6@2x.png x2"
+                  src="./src/img/gallery/gallery6.png"
+                  alt="helados"
+                />
+              </li>
+    
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery7.png x1, gallery7@2x.png x2"
+                  src="./src/img/gallery/gallery7.png"
+                  alt="helados"
+                />
+              </li>
+            </ul>
+    
+            <ul class="gallery__list column size">
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery8.png x1, gallery8@2x.png x2"
+                  src="./src/img/gallery/gallery8.png"
+                  alt="helados"
+                />
+              </li>
+    
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery9.png x1, gallery9@2x.png x2"
+                  src="./src/img/gallery/gallery9.png"
+                  alt="helados"
+                />
+              </li>
+            </ul>
+    
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <img
+                  class="gallery__image"
+                  srcset="gallery10.png x1, gallery10@2x.png x2"
+                  src="./src/img/gallery/gallery10.png"
+                  alt="helados"
+                />
+              </li>
+            </ul>
+          </div>
 
           <ul class="gallery__list column">
             <li class="gallery__item">
@@ -399,7 +616,7 @@
                 src="./src/img/gallery/gallery7.png" alt="helados" />
             </li>
           </ul>
-
+          
           <ul class="gallery__list column size">
             <li class="gallery__item">
               <img class="gallery__image" srcset="gallery8.png x1, gallery8@2x.png x2"
@@ -468,7 +685,10 @@
 
     <!--------------------Section Contacts----------------------------- -->
 
-    <section class="contacts">
+
+      <section id="contacts" class="contacts">
+      <div class="container">
+
       <div class="contacts__subcontact ">
 
         <ul class="containers">
@@ -593,8 +813,10 @@
 
       </div>
 
-      <!--pendiente por analizar la mejor implementacion en la parte de los titulos-->
-    </section>
+      </div>
+      
+          <!--pendiente por analizar la mejor implementacion en la parte de los titulos-->
+      </section>
 
   </main>
 

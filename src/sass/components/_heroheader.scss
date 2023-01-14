@@ -14,30 +14,34 @@
 li {
   list-style: none;
 }
-
-@media screen and (min-width: 0) {
-  
+  .container-ul{
+    padding-left: 15px;
+  }
   .container {
+    
     &__float-svg {
       top: 103px;
-      left: 36px;
       position: absolute;
+      display: flex;
+      justify-content: center;
       width: 100%;
       height: 100%;
       z-index: 1;
     }
     &__float-img {
       position: absolute;
-      left: 117px;
-      top: 4px;
+      display: flex;
+      justify-content: center;
+      padding-left: 50px;
+      top: -3px;
     }
 
     &__header {
       position: relative;
-      overflow: hidden;
       background-color: $color-fondo-hero;
       width: 100%;
       height: 502px;
+      overflow: hidden;
     }
     &__nav {
       background: $color-fondo-hero;
@@ -46,6 +50,12 @@ li {
       flex-direction: row;
       height: 50px;
       width: 100%;
+    }
+    &__ice-cream{
+      display: flex;
+      width: 10vw;
+      min-width: 170px;
+      
     }
   }
 
@@ -153,6 +163,298 @@ li {
   }
 
   .nav {
+    &__buy:hover {
+      scale: 1.1;
+      animation-duration: .5s;
+    }
+    &__exit {
+      z-index: 4;
+      display: flex;
+      height: 30px;
+      width: 100%;
+
+      &--label {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        margin-left: auto;
+        margin-right: 30px;
+        margin-top: 20px;
+      }
+    }
+
+    &__buy {
+      font-family: "DM Sans", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      padding-left: 10px;
+
+      display: flex;
+      width: 175px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: $color-white;
+      border-radius: 22px;
+      border: none;
+      margin: 26px auto 19px;
+
+      color: $accent-color;
+      &--high {
+        display: none;
+      }
+      &--small {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &__mayor-que {
+      padding-top: 5px;
+      z-index: 7;
+      height: 20px;
+      width: 20px;
+      fill: none;
+    }
+    &__checkbox {
+      display: none;
+    }
+    &__links {
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      right: -200%;
+
+      z-index: 10;
+
+      background: var(--menu-color);
+
+    }
+
+    &__logo {
+      padding: 8px 20px;
+    }
+    &__ul {
+      &--links {
+        border-bottom: 1px solid $color-lineas;
+      }
+      &--text {
+        border-top: 1px solid $color-lineas;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        align-content: center;
+        height: 40px;
+
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+
+        color: $color-white;
+      }
+    }
+  }
+  //link current
+  .link {
+    &__a {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+
+      color: $color-white;
+      &--current {
+        color: var(--text-current);
+      }
+    }
+  }
+
+  .link__a:hover {
+    color: var(--color-h2);
+    scale: 1.1;
+    animation-duration: .5s;
+  }
+  #checked:checked ~ .nav__links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: var(--menu-color);
+
+    z-index: 10;
+
+  }
+  // do not show        -------------------
+  .product-hero {
+    display: none;
+  }
+  .hero-footer {
+    display: none;
+  }
+
+@media screen and (min-width: 480px) {
+  
+  .container {
+    
+    &__float-svg {
+      top: 103px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    &__float-img {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      padding-left: 50px;
+      top: -3px;
+    }
+
+    &__header {
+      position: relative;
+      background-color: $color-fondo-hero;
+      width: 100%;
+      height: 502px;
+      overflow: hidden;
+    }
+    &__nav {
+      background: $color-fondo-hero;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      height: 50px;
+      width: 100%;
+    }
+    &__ice-cream{
+      display: flex;
+      width: 10vw;
+      min-width: 170px;
+      
+    }
+  }
+
+  .hero {
+    &__button {
+      padding-left: 20px;
+      z-index: 2;
+      border-radius: 20px;
+      border: none;
+      display: flex;
+      gap: 8px;
+
+      &--products {
+        background: $accent-color;
+        width: 62.4px;
+        height: 24px;
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 0;
+        color: $color-white;
+      }
+      &--made {
+        padding-left: 0;
+        width: 82.8px;
+        height: 24px;
+
+        background: $color-white;
+
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        color: $accent-color;
+      }
+    }
+    &__title {
+      padding-left: 20px;
+      position: relative;
+      @include font-titan-400();
+      width: 218px;
+      height: 106px;
+      margin-top: 128px;
+
+      z-index: 2;
+      &--h1 {
+        color: $color-white;
+
+        font-size: 16px;
+      }
+      &--h2 {
+        position: absolute;
+        @include font-titan-400();
+        color: $color-h2;
+        font-size: 26px;
+        bottom: 20px;
+      }
+    }
+  }
+  .label {
+    position: relative;
+    &__content {
+      cursor: pointer;
+      position: absolute;
+      right: 25px;
+      top: 0;
+      margin-top: 17px;
+      height: 25px;
+      width: 25px;
+    }
+    &__svg {
+      cursor: pointer;
+      position: absolute;
+      margin-top: -12px;
+      left: 0;
+      width: 20px;
+      height: 4px;
+    }
+  }
+  .svg {
+    &--1 {
+      top: 20px;
+      margin-right: 25px;
+    }
+    &--2 {
+      top: 20px+6px;
+      margin-right: 25px;
+    }
+    &--3 {
+      top: 20px+6px+6px;
+      margin-right: 25px;
+    }
+  }
+
+  .nav {
+    &__buy:hover {
+      scale: 1.1;
+      animation-duration: .5s;
+    }
     &__exit {
       z-index: 4;
       display: flex;
@@ -208,12 +510,15 @@ li {
       display: none;
     }
     &__links {
-      height: 502px;
+      position: fixed;
+      height: 100vh;
       width: 250px;
-      position: absolute;
       right: -100%;
 
-      background: $color-rosa-oscuro;
+      z-index: 10;
+
+      background: var(--menu-color);
+
     }
 
     &__logo {
@@ -257,7 +562,7 @@ li {
 
       color: $color-white;
       &--current {
-        color: $accent-color;
+        color: var(--text-current);
       }
     }
   }
@@ -265,11 +570,13 @@ li {
   #checked:checked ~ .nav__links {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
-    background: $color-rosa-oscuro;
-    z-index: 3;
+    background: var(--menu-color);
+
+    z-index: 10;
+
   }
   // do not show        -------------------
   .product-hero {
@@ -279,30 +586,33 @@ li {
     display: none;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 769px) {
   
   .container {
     &__float-svg {
       top: 20px;
-      left: 30%;
       position: absolute;
+      display: flex;
+      justify-content: center;
       width: 100%;
       height: 100%;
       z-index: 1;
     }
     &__float-img {
+      display: flex;
       position: absolute;
-      left: 8%;
+      left: 0%;
       right: 0;
       top: 30px;
     }
 
     &__header {
       position: relative;
-      overflow: hidden;
       background-color: $color-fondo-hero;
       width: 100%;
       height: 416px;
+      overflow: hidden;
+
     }
     &__nav {
       background: $color-fondo-hero;
@@ -311,6 +621,14 @@ li {
       flex-direction: row;
       height: 50px;
       width: 100%;
+    }
+    &__img{
+      display: flex;
+    }
+    &__ice-cream{
+      display: flex;
+      width: 10vw;
+      min-width: 160px;
     }
   }
 
@@ -360,6 +678,10 @@ li {
 
         color: #d41443;
       }
+    }
+    &__button:hover {
+      scale: 1.1;
+      animation-duration: .5s;
     }
     &__title {
       padding-left: 20px;
@@ -424,7 +746,10 @@ li {
   }
 
   .nav {
-    padding-top: 20px;
+    &__buy:hover {
+      scale: 1.1;
+      animation-duration: .5s;
+    }
     &__buy {
       font-family: "DM Sans", sans-serif;
       font-style: normal;
@@ -454,12 +779,16 @@ li {
     }
 
     &__links {
-      height: 502px;
-      width: 250px;
-      position: absolute;
+      height: 300vh;
+      width: 350px;
+      position: fixed;
       right: -100%;
+      overflow: visible;
+      z-index: 10;
 
-      background: $color-rosa-oscuro;
+
+      background: var(--menu-color);
+
     }
 
     &__logo {
@@ -471,15 +800,22 @@ li {
       width: 254px;
     }
   }
+  
+  .link__a:hover {
+    color: var(--color-h2);
+    scale: 1.1;
+    animation-duration: .5s;
+  }
   // ------------ show lists options
   #checked:checked ~ .nav__links {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
-    background: $color-rosa-oscuro;
-    z-index: 7;
+    background: var(--menu-color);
+    z-index: 10;
+
   }
   //-------------- show  768 px      -------------------
   .product-hero {
@@ -579,33 +915,46 @@ li {
 
       color: $color-white;
     }
+    
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1020px) {
   
   .container {
+    padding: 0 100;
     
     &__header {
+      padding: 0;
       overflow: hidden;
       background-color: $color-fondo-hero;
       width: 100%;
       height: 664px;
     }
        &__float-svg {
-      top: 250px;
-      left: 70vh;
-      right: 188px;
+      top: 150px;
+      left: 0%;
       position: absolute;
+      display: flex;
+      justify-content: center;
       z-index: 1;
       
     }
     &__float-img {
       position: absolute;
-      left: 8%;
+      display: flex;
+      align-items: center;
+      left: -3%;
       right: 0;
-      top: 30px;
-      width: 236px;
-      height: 537px;
+      top: -10px;
+      width: 100%;
+      height: 597px;
+    }
+    &__nav {
+      z-index: 5;
+    }
+    &__ice-cream{
+      width: 14vw;
+      min-width: 200px;
     }
   }
 
@@ -615,6 +964,10 @@ li {
   }
   //--------------
   .nav {
+    &__buy:hover {
+      scale: 1.1;
+      animation-duration: .5s;
+    }
     &__buy {
       &--high {
         z-index: 6;
@@ -625,9 +978,10 @@ li {
       }
     }
     &__links {
-      height: 502px;
-      width: 250px;
-      position: relative;
+      height: 100vh;
+      width: 0px;
+      position: absolute;
+      right: -20%;
     }
     &__ul--links {
       position: absolute;
@@ -644,9 +998,17 @@ li {
       border: none;
       font-size: 16px;
     }
+    &__ul--text:hover {
+      color: $accent-color;
+      scale: 1.1;
+      animation-duration: 0.5s;
+    }
     &__logo {
       padding: 37px 20px;
     }
+  }
+  .link__a:hover {
+    color: var(--color-h2);
   }
   //-----------
   .hero {
@@ -661,6 +1023,8 @@ li {
       display: flex;
       gap: 8px;
       line-height: 18px;
+
+      animation: float-button 2s timing-function delay iteration-count direction fill-mode;
 
       &--products {
         background: $accent-color;
@@ -677,6 +1041,11 @@ li {
         text-align: center;
         padding-left: 0;
         color: $color-white;
+      }
+      &--products:hover {
+            transform: scale(1.1);
+  transition: .5s;
+
       }
       &--made {
         padding-left: 0;
@@ -696,7 +1065,12 @@ li {
 
         color: $accent-color;
       }
+      &--made:hover {
+         transform: scale(1.1);
+  transition: .5s;
     }
+    }
+    
     &__title {
       padding-left: 20px;
       position: relative;
@@ -723,6 +1097,7 @@ li {
   }
   //  /-------
   .column1__img {
+    z-index: 7;
     width: 213px;
     height: 216px;
     margin-top: 150px;
@@ -825,4 +1200,182 @@ li {
       color: $color-white;
     }
   }
+
 }
+
+  //--------burble 1     global ------
+  .bubble div {
+    z-index: 6;
+    position: absolute;
+      border-radius: 50%;
+      background-color: $color-bubble;
+      animation: bubble-animation 5s ease-in-out infinite ;
+  }
+  .bubble div:nth-child(1) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 4s;
+      left: 10vh;
+  }
+  .bubble div:nth-child(2) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 6s;
+      right: 40vh;
+  }
+  .bubble div:nth-child(3) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 7s;
+      left: 70vh;
+  }
+  // animation bubble
+  @keyframes bubble-animation {
+    0% {
+      width: 0;
+      height: 0;
+      bottom: 0;
+    }
+    3% {
+     width: 8vh;
+      height: 8vh;
+    }
+    100% {
+      bottom: 100vh;
+      transform: translateX(100vh);
+    }
+  }
+
+  //bubble2
+.bubble2 div {
+  
+    z-index: 6;
+    position: absolute;
+      border-radius: 50%;
+      background-color: $color-bubble;
+      animation: bubble2-animation 5s ease-in-out infinite ;
+  }
+  .bubble2 div:nth-child(1) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 4.4s;
+      right: 25vh;
+  }
+  .bubble2 div:nth-child(2) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 6s;
+      left: 80vh;
+  }
+  .bubble div:nth-child(3) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 7s;
+      right: 50vh;
+  }
+  // animation bubble 
+  @keyframes bubble2-animation {
+    0% {
+      width: 0;
+      height: 0;
+      bottom: 0;
+    }
+    3% {
+     width: 15vh;
+      height: 15vh;
+    }
+    100% {
+      bottom: 100vh;
+      transform: translateX(100vh);
+    }
+  }
+
+
+
+  //--------burble 1-invest ------------
+  .bubble-invest div {
+    
+    z-index: 6;
+    position: absolute;
+      border-radius: 50%;
+      background-color: $color-bubble;
+      animation: bubble-animation-invest 5s ease-in-out infinite ;
+  }
+  .bubble-invest div:nth-child(1) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 4s;
+      left: 10vh;
+  }
+  .bubble-invest div:nth-child(2) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 6s;
+      right: 40vh;
+  }
+  .bubble-invest div:nth-child(3) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 7s;
+      left: 70vh;
+  }
+  // animation bubble-invest ------
+  @keyframes bubble-animation-invest {
+    0% {
+      width: 0;
+      height: 0;
+      bottom: 0;
+    }
+    3% {
+     width: 8vh;
+      height: 8vh;
+    }
+    100% {
+      bottom: 100vh;
+      transform: translateX(-100vh);
+    }
+  }
+
+  //bubble2-invest ------
+.bubble2-invest div {
+  
+    z-index: 6;
+    position: absolute;
+      border-radius: 50%;
+      background-color: $color-bubble;
+      animation: bubble2-animation-invest 5s ease-in-out infinite ;
+  }
+  .bubble2-invest div:nth-child(1) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 4.4s;
+      right: 25vh;
+  }
+  .bubble2-invest div:nth-child(2) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 6s;
+      left: 80vh;
+  }
+  .bubble-invest div:nth-child(3) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 7s;
+      right: 50vh;
+  }
+  // animation bubble-invest
+  @keyframes bubble2-animation-invest {
+    0% {
+      width: 0;
+      height: 0;
+      bottom: 0;
+    }
+    3% {
+     width: 15vh;
+      height: 15vh;
+    }
+    100% {
+      bottom: 100vh;
+      transform: translateX(-100vh);
+    }
+  }
