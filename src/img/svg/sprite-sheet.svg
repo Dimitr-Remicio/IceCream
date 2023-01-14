@@ -120,7 +120,7 @@
             <path stroke="#D41443" d="M0 1h20" />
         </symbol>
         <symbol id="ellipse">
-            <ellipse cx="173" cy="172" fill="#FFA5BA" rx="173" ry="172" />
+            <ellipse cx="190" cy="190" fill="#FFA5BA" rx="190" ry="190" />
         </symbol>
         <symbol id="mayor-que">
                 <path stroke="#D41443" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

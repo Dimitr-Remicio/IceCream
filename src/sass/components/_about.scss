@@ -3,6 +3,10 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  background-image: url(../img/sectionbg1\ 1.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: 40% 70%;
 }
 .about__titlecontainer {
   font-family: "Titan One";
@@ -49,7 +53,7 @@
   align-content: center;
 }
 .about__img :hover {
-  transform: rotate(45deg);
+  transform: rotate(30deg);
   transition: 3s;
 }
 .about__img img {
@@ -59,7 +63,7 @@
 }
 .about__paragraphs {
   display: flex;
-  gap: 10px;
+  gap: 26px;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
@@ -88,7 +92,7 @@
   cursor: pointer;
 }
 .about__paragraph1:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: .4s;
 }
 
@@ -99,11 +103,7 @@
   padding-top: 40px;
   margin-right: 20px;
   cursor: pointer;
-  background-image: url(../img/sectionbg1\ 1.png);
-  background-size: 250px;
-  background-repeat: no-repeat;
-  background-position: top left;
-  padding-right: 40px;
+  
 }
 .about__paragraph2:hover {
   transform: scale(1.1);
@@ -141,6 +141,8 @@
     align-content: center;
     width: 100%;
     height: 100%;
+    background-image: none;
+   
   }
 
   .about__title2 {
@@ -200,6 +202,11 @@
     width: 100%;
     justify-content: center;
     align-content: center;
+    background-image: url(../img/sectionbg1\ 1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 6;
   }
 
   .container {
@@ -238,11 +245,7 @@
     flex-wrap: wrap;
     gap: 200px;
     width: auto;
-    background-image: url(../img/sectionbg1\ 1.png);
-    background-size: 1280px;
-    background-repeat: no-repeat;
-    background-position: top center;
-    z-index: 6;
+    
     font-size: 16px;
     line-height: 28.16px;
     letter-spacing: 0.04em;
