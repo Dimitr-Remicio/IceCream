@@ -16,7 +16,7 @@
     gap: 50px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 
@@ -28,8 +28,9 @@
   margin: 16px;
   justify-content: center;
   align-items: center;
-  width: 368px;
-  height: 538px;
+  width: 30vw;
+  max-width: 370px;
+  height: 560px;
   padding: 40px;
 
   //para revisar margin y padddin// 
