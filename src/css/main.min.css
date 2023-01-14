@@ -1860,7 +1860,7 @@ li {
 }
 .advantages__value {
   line-height: 66.41px;
-  letter-spacing: letter- spacing;
+  letter-spacing: letter-spacing;
   font-family: "titan one";
   font-weight: 400;
   font-size: 58px;
@@ -1884,8 +1884,19 @@ li {
   width: 50px;
   height: 50px;
   margin-bottom: 40px;
+  animation: rotatesvg 4s infinite linear;
   position: relative;
   transform-origin: 50%, 50%;
+}
+@keyframes rotatesvg {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 50%, 50%;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 50%, 50%;
+  }
 }
 
 @media screen and (max-width: 768px) {

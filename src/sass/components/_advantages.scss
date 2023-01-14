@@ -19,9 +19,7 @@
 
 
     &__value {
-        @include text-height-spacing-family (66.41px, letter-
-
-spacing, 'titan one');
+        @include text-height-spacing-family (66.41px, letter-spacing, 'titan one');
         @include text-weight-size (400, 58px);
         color: $accent-color;
         margin-bottom: 16px;
@@ -41,11 +39,20 @@ spacing, 'titan one');
     &__svg {
         @include width-height (50px,50px);
         margin-bottom: 40px;
+        animation: rotatesvg 4s infinite linear;
         position: relative;
         transform-origin: 50%, 50%;        
     }
 
     
+    @keyframes rotatesvg {
+        0%{
+            transform: rotate(0deg); transform-origin: 50%, 50%;
+        }
+        100%{
+            transform: rotate(360deg); transform-origin: 50%, 50%;
+        }    
+    }
 }
         
 
