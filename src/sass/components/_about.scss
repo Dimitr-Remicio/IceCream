@@ -1,38 +1,46 @@
-
-
 .about {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
 }
-.about__titlecontainer{
-  font-family: 'Titan One';
-  
+.about__titlecontainer {
+  font-family: "Titan One";
 }
 
 .about__title2 {
   margin-top: 60px;
   color: $color-h3;
   text-align: center;
-  font-size: 18;
+  font-size: 1em;
   height: 21px;
   left: 58px;
   line-height: 21px;
   cursor: pointer;
 }
-
+.about__title2:hover {
+  letter-spacing: 15px;
+  transition: 1s;
+  transition-timing-function: ease-in;
+}
 .about__title3 {
   padding-left: 40px;
   padding-right: 40px;
+  margin-right: 0em;
   color: $color-h2;
   text-align: center;
   margin-top: 15px;
-  font-size: 34;
+  font-size: 2em;
   height: 76px;
   left: 56px;
+  line-height: 38.93px;
 }
-
+.about__title3:hover {
+  letter-spacing: 20px;
+  padding: 0;
+  transition: 1s;
+  transition-timing-function: ease-in-out;
+}
 .about__img {
   margin-right: 20px;
   margin-top: 32px;
@@ -40,8 +48,11 @@
   justify-content: center;
   align-content: center;
 }
-
-  .about__img img {
+.about__img :hover {
+  transform: rotate(45deg);
+  transition: 3s;
+}
+.about__img img {
   width: 280px;
   height: 279px;
   cursor: pointer;
@@ -52,10 +63,8 @@
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
-  
-  
 }
-.about__paragraphs li{
+.about__paragraphs li {
   display: flex;
 }
 .about__paragraph {
@@ -78,15 +87,27 @@
   margin-bottom: 5px;
   cursor: pointer;
 }
+.about__paragraph1:hover {
+  transform: scale(1.1);
+  transition: .4s;
+}
 
 .about__paragraph2 {
-  width: 240px;
+  width: 260px;
   height: 181px;
   color: var(--text3);
-  padding-top: 20px;
-
+  padding-top: 40px;
   margin-right: 20px;
   cursor: pointer;
+  background-image: url(../img/sectionbg1\ 1.png);
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-right: 40px;
+}
+.about__paragraph2:hover {
+  transform: scale(1.1);
+  transition: .4s;
 }
 
 .about__button {
@@ -106,15 +127,13 @@
   font-size: 14px;
   line-height: 18px;
   cursor: pointer;
-  color: $color-h2 #d41443;
+  color: $color-h2;
+  margin-top: 50px;
 }
 .about__button:hover {
   transform: scale(1.1);
-  transition: .5s;
+  transition: 0.5s;
 }
-
-
-
 
 @media screen and (min-width: 768px) {
   .about {
@@ -123,7 +142,6 @@
     width: 100%;
     height: 100%;
   }
-
 
   .about__title2 {
     margin-top: 60px;
@@ -159,7 +177,6 @@
   }
 
   .about__paragraph1 {
-
     padding-right: 0px;
     width: 354px;
   }
@@ -168,16 +185,14 @@
     padding-right: 0px;
     width: 354px;
     height: 155px;
+    background-image: none;
   }
   .about__button {
     background-color: $color-white;
     border: 0px;
-    
+    margin-bottom: 100px;
   }
 }
-
-
-
 
 @media screen and (min-width: 1280px) {
   .about {
@@ -185,7 +200,6 @@
     width: 100%;
     justify-content: center;
     align-content: center;
-    
   }
 
   .container {
@@ -193,7 +207,7 @@
   }
 
   .about__title2 {
-    padding: 0 425px;
+    padding: 0 300px;
     font-size: 30px;
     line-height: 34px;
     letter-spacing: 0.04em;
@@ -211,9 +225,11 @@
   .about__img img {
     width: 400px;
     height: 400px;
+    margin-top: 60px;
   }
-  .about__paragraphs{
+  .about__paragraphs {
     gap: 20px;
+    margin-top: 150px;
   }
   .about__paragraph {
     padding: 0px;
@@ -222,7 +238,11 @@
     flex-wrap: wrap;
     gap: 200px;
     width: auto;
-    
+    background-image: url(../img/sectionbg1\ 1.png);
+    background-size: 1280px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 6;
     font-size: 16px;
     line-height: 28.16px;
     letter-spacing: 0.04em;
@@ -245,6 +265,5 @@
   .about__button {
     background-color: $color-white;
     border: 0px;
-    
   }
 }
