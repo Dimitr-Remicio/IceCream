@@ -279,7 +279,7 @@ li {
     display: none;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 769px) {
   
   .container {
     &__float-svg {
@@ -361,6 +361,10 @@ li {
         color: #d41443;
       }
     }
+    &__button:hover {
+      scale: 1.1;
+      animation-duration: .5s;
+    }
     &__title {
       padding-left: 20px;
       position: relative;
@@ -424,7 +428,10 @@ li {
   }
 
   .nav {
-    padding-top: 20px;
+    &__buy:hover {
+      scale: 1.1;
+      animation-duration: .5s;
+    }
     &__buy {
       font-family: "DM Sans", sans-serif;
       font-style: normal;
@@ -470,6 +477,11 @@ li {
       position: absolute;
       width: 254px;
     }
+  }
+  .link__a:hover {
+    color: $accent-color;
+    scale: 1.1;
+    animation-duration: .5s;
   }
   // ------------ show lists options
   #checked:checked ~ .nav__links {
@@ -581,11 +593,12 @@ li {
     }
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1020px) {
   
   .container {
-    
+    padding: 0 100;
     &__header {
+      padding: 0;
       overflow: hidden;
       background-color: $color-fondo-hero;
       width: 100%;
@@ -607,6 +620,9 @@ li {
       width: 236px;
       height: 537px;
     }
+    &__nav {
+      z-index: 5;
+    }
   }
 
   //this view hide
@@ -615,6 +631,10 @@ li {
   }
   //--------------
   .nav {
+    &__buy:hover {
+      scale: 1.1;
+      animation-duration: .5s;
+    }
     &__buy {
       &--high {
         z-index: 6;
@@ -644,9 +664,17 @@ li {
       border: none;
       font-size: 16px;
     }
+    &__ul--text:hover {
+      color: $accent-color;
+      scale: 1.1;
+      animation-duration: 0.5s;
+    }
     &__logo {
       padding: 37px 20px;
     }
+  }
+  .link__a:hover {
+    color: $accent-color;
   }
   //-----------
   .hero {
@@ -661,6 +689,8 @@ li {
       display: flex;
       gap: 8px;
       line-height: 18px;
+
+      animation: float-button 2s timing-function delay iteration-count direction fill-mode;
 
       &--products {
         background: $accent-color;
@@ -677,6 +707,11 @@ li {
         text-align: center;
         padding-left: 0;
         color: $color-white;
+      }
+      &--products:hover {
+            transform: scale(1.1);
+  transition: .5s;
+
       }
       &--made {
         padding-left: 0;
@@ -696,7 +731,12 @@ li {
 
         color: $accent-color;
       }
+      &--made:hover {
+         transform: scale(1.1);
+  transition: .5s;
     }
+    }
+    
     &__title {
       padding-left: 20px;
       position: relative;
@@ -723,6 +763,7 @@ li {
   }
   //  /-------
   .column1__img {
+    z-index: 7;
     width: 213px;
     height: 216px;
     margin-top: 150px;
@@ -825,4 +866,182 @@ li {
       color: $color-white;
     }
   }
+
 }
+
+  //--------burble 1     global ------
+  .bubble div {
+    z-index: 6;
+    position: absolute;
+      border-radius: 50%;
+      background-color: $color-bubble;
+      animation: bubble-animation 5s ease-in-out infinite ;
+  }
+  .bubble div:nth-child(1) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 4s;
+      left: 10vh;
+  }
+  .bubble div:nth-child(2) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 6s;
+      right: 40vh;
+  }
+  .bubble div:nth-child(3) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 7s;
+      left: 70vh;
+  }
+  // animation bubble
+  @keyframes bubble-animation {
+    0% {
+      width: 0;
+      height: 0;
+      bottom: 0;
+    }
+    3% {
+     width: 8vh;
+      height: 8vh;
+    }
+    100% {
+      bottom: 100vh;
+      transform: translateX(100vh);
+    }
+  }
+
+  //bubble2
+.bubble2 div {
+  
+    z-index: 6;
+    position: absolute;
+      border-radius: 50%;
+      background-color: $color-bubble;
+      animation: bubble2-animation 5s ease-in-out infinite ;
+  }
+  .bubble2 div:nth-child(1) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 4.4s;
+      right: 25vh;
+  }
+  .bubble2 div:nth-child(2) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 6s;
+      left: 80vh;
+  }
+  .bubble div:nth-child(3) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 7s;
+      right: 50vh;
+  }
+  // animation bubble 
+  @keyframes bubble2-animation {
+    0% {
+      width: 0;
+      height: 0;
+      bottom: 0;
+    }
+    3% {
+     width: 15vh;
+      height: 15vh;
+    }
+    100% {
+      bottom: 100vh;
+      transform: translateX(100vh);
+    }
+  }
+
+
+
+  //--------burble 1-invest ------------
+  .bubble-invest div {
+    
+    z-index: 6;
+    position: absolute;
+      border-radius: 50%;
+      background-color: $color-bubble;
+      animation: bubble-animation-invest 5s ease-in-out infinite ;
+  }
+  .bubble-invest div:nth-child(1) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 4s;
+      left: 10vh;
+  }
+  .bubble-invest div:nth-child(2) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 6s;
+      right: 40vh;
+  }
+  .bubble-invest div:nth-child(3) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 7s;
+      left: 70vh;
+  }
+  // animation bubble-invest ------
+  @keyframes bubble-animation-invest {
+    0% {
+      width: 0;
+      height: 0;
+      bottom: 0;
+    }
+    3% {
+     width: 8vh;
+      height: 8vh;
+    }
+    100% {
+      bottom: 100vh;
+      transform: translateX(-100vh);
+    }
+  }
+
+  //bubble2-invest ------
+.bubble2-invest div {
+  
+    z-index: 6;
+    position: absolute;
+      border-radius: 50%;
+      background-color: $color-bubble;
+      animation: bubble2-animation-invest 5s ease-in-out infinite ;
+  }
+  .bubble2-invest div:nth-child(1) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 4.4s;
+      right: 25vh;
+  }
+  .bubble2-invest div:nth-child(2) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 6s;
+      left: 80vh;
+  }
+  .bubble-invest div:nth-child(3) {
+      width: 100px;
+      height: 100px;
+      animation-duration: 7s;
+      right: 50vh;
+  }
+  // animation bubble-invest
+  @keyframes bubble2-animation-invest {
+    0% {
+      width: 0;
+      height: 0;
+      bottom: 0;
+    }
+    3% {
+     width: 15vh;
+      height: 15vh;
+    }
+    100% {
+      bottom: 100vh;
+      transform: translateX(-100vh);
+    }
+  }
