@@ -38,7 +38,6 @@
            <div></div>
            <div></div>
          </div>
-       
       <!------------------ nav -------------->
       <nav class="container__nav">
         <div class="nav__logo">
@@ -48,7 +47,7 @@
         </div>
 
          <!-- --------- button buy windows high -------->
-          <button class="nav__buy nav__buy--high">
+          <button id="btn_buy" class="nav__buy nav__buy--high">
               Buy now
               <svg class="nav__mayor-que" height="15" width="15">
                 <use href="./src/img/svg/sprite-sheet.svg#mayor-que"></use>
@@ -63,13 +62,13 @@
             <!-- -------- salir del menu ----------- -->
             <div class="nav">
               <label for="checked" class="nav__exit nav__exit--label">
-                <svg label__svg>
+                <svg class="nav__exit--svg">
                   <use href="./src/img/svg/sprite-sheet.svg#close"></use>
                 </svg>
               </label>
             </div>
             <!-- ---------- button buy windows small------- -->
-            <button class="nav__buy nav__buy--small">
+            <button id="btn_buy-small" class="nav__buy nav__buy--small">
               Buy now
               <svg class="nav__mayor-que" height="20" width="20">
                 <use href="./srcimg/svg/sprite-sheet.svg#mayor-que">  </use>
@@ -132,11 +131,15 @@
           <svg class="container__svg--ellipse" width="346" height="344">
             <use href="./src/img/svg/sprite-sheet.svg#ellipse"></use>
           </svg>
+             <div class="container__svg">
+          <svg class="container__svg--ellipse3" width="534" height="534">
+            <use href="./src/img/svg/sprite-sheet.svg#ellipse3"></use>
+          </svg>
         </div>
         <div class="container__float-img">
           <div class="container__img ">
             <img
-              src="./src/img/slider-pic7 1.png"
+              src="./src/img/slider-pic7 1@2x.png"
               alt="IceCream"
               class="container__ice-cream"
               height="410px"
@@ -158,14 +161,19 @@
           </h1>
         </div>
         <div class="hero__button">
-          <button type="button" class="hero__button hero__button--products">
+          <a class="hero__link hero__link--products" href="#products">
+  <button type="button" class="hero__button hero__button--products">
             Products
           </button>
-          <button type="button" class="hero__button hero__button--made">
+          </a>
+          <a class="hero__link hero__link--about" href="#about">
+            <button type="button" class="hero__button hero__button--made">
             How it's made?
           </button>
+          </a>          
         </div>
       </div>
+    </div>
       <!-- ---------- section product and numbers ---------- -->
       <section class="product-hero">
         <div class="product-hero__group1">
@@ -215,6 +223,49 @@
         </div>
       </section>
 
+      <!-- ----------------- modal ---------------- -->
+      <div id="modal-buy">
+        <!--  ---------- exit modal --------------- -->
+        <div class="exit-buy">
+          <button type="button" id="btn_exit" class="exit-buy__button">
+           <svg class="exit-buy__svg" height="30" width="30">
+            <use href="./src/img/svg/sprite-sheet.svg#close"></use>
+           </svg>
+          </button>
+        </div>
+        <article class="title-buy" >
+           <h1 class="title-buy__tittle" >Syper Pyper Ice Cream </h1>
+         </article>
+         <!-- --------- img y input -------------------- -->
+         <div class="content-product-buy" >
+          <div class="product-buy">
+            <img src="./src/img/home-pic1.png"  alt="cream strawberry"  class="product-buy__img">
+              <input type="number" class="product-buy__how-many" placeholder="how many?">
+          </div>
+          <div class="product-buy">
+            <img src="./src/img/home-pic2.png" alt="smoothie" class="product-buy__img">
+              <input type="number" class="product-buy__how-many" placeholder="how many?">
+       </div>
+          <div class="product-buy">
+            <img src="./src/img/home-pic3.png" alt="ice cream cookies" class="product-buy__img">
+              <input type="number" class="product-buy__how-many" placeholder="how many?">
+          </div>
+         </div>
+<!-- ------------------------- form  ----------------- -->
+         <form class="form-buy" action="">
+          <label class="form-buy__label" for="name">Name</label>
+          <input class="form-buy__input" type="text" id="name" value="" required>
+
+              <label class="form-buy__label" for="phone">Phone</label>
+          <input class="form-buy__input" type="tel" id="phone" value="" required>
+
+              <label class="form-buy__label" for="mail">Mail</label>
+          <input class="form-buy__input" type="mail" id="mail" value="" required>
+<textarea id="txt-area-write" class="form-buy__area" rows="5" cols="20" required style="overflow: hidde;" placeholder="write something and maybe we read this" ></textarea>
+          
+          <button class="form-buy__button" type="submit" > I want that!</button>
+          </form>
+      </div>
       
   </header>
 
@@ -680,6 +731,7 @@
   <footer>
   </footer>
 
+  <script src="./src/js/buy-modal.js"></script>
   <script src="./src/js/dark-mode.js"></script>
   <script src="./src/js/readmore.js"></script>
 </body>

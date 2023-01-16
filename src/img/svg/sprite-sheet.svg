@@ -4,7 +4,7 @@
             <path stroke="#D41443" d="M0 1h20" />
         </symbol>
          <symbol id="close">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path stroke="#fff" d="m1.26 1 13.48 14M1 14.74 15 1.26"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path  d="m1.26 1 13.48 14M1 14.74 15 1.26"/></svg>
         </symbol>
         <symbol id="logo">
             <ellipse cx="25" cy="25.5" fill="#fff" rx="24" ry="24.5" />
@@ -122,6 +122,9 @@
         
         <symbol id="ellipse">
             <ellipse cx="173" cy="172" fill="#FFA5BA" rx="173" ry="172" />
+        </symbol>
+        <symbol id="ellipse3"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="534" height="534" fill="none"><path fill="#FFA5BA" d="M534 267c0 147.46-119.54 267-267 267C119.54 534 0 414.46 0 267 0 119.54 119.54 0 267 0c147.46 0 267 119.54 267 267Z"/></svg>
         </symbol>
         <symbol id="mayor-que">
                 <path stroke="#D41443" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
