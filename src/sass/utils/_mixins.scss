@@ -31,3 +31,10 @@
     width: $width;
     height: $height;
 }
+
+@mixin border-style-color-width-radius($style, $color, $width, $radius) {
+    border-style: $style;
+    border-color: $color;
+    border-width: $width;
+    border-radius: $radius;
+}
