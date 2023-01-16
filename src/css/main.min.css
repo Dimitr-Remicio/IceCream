@@ -355,6 +355,8 @@
 .form-buy__label {
   color: #D41443;
   margin-top: 5px;
+  border: none;
+  border-radius: 10px;
 }
 .form-buy__input {
   opacity: 1;

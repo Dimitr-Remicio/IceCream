@@ -143,6 +143,8 @@
     &__label {
       color: $accent-color;
       margin-top: 5px;
+      border: none;
+      border-radius: 10px;
     }
     &__input {
       opacity: 1;
