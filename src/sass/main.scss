@@ -2,7 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 @import "./utils/variables";
 @import "./utils/mixins";
-@import "./components/heroheader";
+@import "./components/modal";
+
+// @import "./components/heroheader";
+@import "./components/heroheader2";
 @import "./components/products";
 @import "./components/about";
 @import "./components/advantages";
@@ -15,7 +18,9 @@
 
 
 
-
+html{
+  overflow-x: hidden;
+}
 * {
     margin: 0;
     padding: 0;

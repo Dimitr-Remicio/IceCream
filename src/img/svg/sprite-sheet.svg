@@ -1,7 +1,7 @@
 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
     <defs>
          <symbol id="close">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path stroke="#fff" d="m1.26 1 13.48 14M1 14.74 15 1.26"/></svg>
+            <path stroke="" d="m1.26 1 13.48 14M1 14.74 15 1.26"/>
         </symbol>
         <symbol id="logo">
             <ellipse cx="25" cy="25.5" fill="#fff" rx="24" ry="24.5" />
@@ -120,7 +120,10 @@
             <path stroke="#D41443" d="M0 1h20" />
         </symbol>
         <symbol id="ellipse">
-            <ellipse cx="190" cy="190" fill="#FFA5BA" rx="190" ry="190" />
+            <ellipse cx="230" cy="230" fill="#FFA5BA" rx="210" ry="210" />
+        </symbol>
+        <symbol id="ellipse3">
+            <ellipse cx="270" cy="270" fill="#FFA5BA" rx="270" ry="270" />
         </symbol>
         <symbol id="mayor-que">
                 <path stroke="#D41443" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
