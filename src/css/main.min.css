@@ -220,35 +220,6 @@
     text-align: center;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-.container-ul {
-  padding-left: 15px;
-}
-
-.container__float-svg {
-  top: 103px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-.container__float-img {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  padding-left: 50px;
-  top: -3px;
-  
 @keyframes unfoldIn {
   0% {
     transform: scaleY(0.005) scaleX(0);
