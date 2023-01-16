@@ -24,7 +24,7 @@
     top: 50%;
     transform: translate(-250%, -50%);
     position: fixed;
-    @include border-style-color-widht-radius(solid, $color-rosa-oscuro, 1px, 2px);
+    @include border-style-color-width-radius(solid, $color-rosa-oscuro, 1px, 2px);
     box-shadow: 4px 4px 20px 0px rgb(26, 26, 26);
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(1,0,0, .6)), url("../img/Modal1.png");
     background-repeat: no-repeat;
@@ -77,6 +77,8 @@
   
 }
 
+
+
 //------boton---------//
 
 #closemodal + label {
@@ -97,7 +99,17 @@
     animation-fill-mode:forwards; 
 }
 
-
+#like{
+    position: fixed;
+    text-justify: right;
+    width: 60px;
+    z-index: 101;
+    right:5px;
+    top:60px;
+    @include text-weight-size (200px, 10px);
+    font-family: 'dm sans';
+    color: rgb(223, 219, 219);
+}
 
 
 #closemodal:checked + label , #closemodal:checked ~ .startmodal__container{
@@ -124,7 +136,7 @@
     
     .startmodal__box{
         @include width-height (500px, 320px);
-        @include border-style-color-widht-radius (solid, $color-rosa-oscuro, 5px,2px);
+        @include border-style-color-width-radius (solid, $color-rosa-oscuro, 5px,2px);
     }
 
     #closemodal + label{
@@ -144,7 +156,7 @@
 
     .startmodal__box{
         @include width-height (260px, 330px);
-        @include border-style-color-widht-radius (solid, $color-rosa-oscuro, 5px,2px);
+        @include border-style-color-width-radius (solid, $color-rosa-oscuro, 5px,2px);
     }
 
     .startmodal__boxinternal{

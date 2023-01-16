@@ -135,6 +135,19 @@
   animation-fill-mode: forwards;
 }
 
+#like {
+  position: fixed;
+  text-justify: right;
+  width: 60px;
+  z-index: 101;
+  right: 5px;
+  top: 60px;
+  font-weight: 200px;
+  font-size: 10px;
+  font-family: "dm sans";
+  color: rgb(223, 219, 219);
+}
+
 #closemodal:checked + label, #closemodal:checked ~ .startmodal__container {
   display: none;
 }
