@@ -1,9 +1,8 @@
 // check for saved 'darkMode' in localStorage
-const toggle = document.getElementById('toggleDark');
-const toggle = document.getElementById('toggleDark2');
+const toggle = document.getElementById('Darkbutton');
 let darkMode = localStorage.getItem('darkMode'); 
 
-const darkModeToggle = document.querySelector('#toggleDark');
+const darkModeToggle = document.querySelector('#Darkbutton');
 
 
 const enableDarkMode = () => {
